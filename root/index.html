@@ -1,153 +1,160 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<html data-bs-theme="light" lang="ko">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <title>우리 동네가게</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+
+    <!-- Bootstrap 5.3.1 -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Navbar-Centered-Brand-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Icon pack -->
+    <script src='https://unpkg.com/feather-icons'></script>
+    <script id="rendered-js" >  feather.replace(); </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
 </head>
 
 <body>
+
+
     <nav class="navbar navbar-expand-md sticky-top navbar-shrink py-3 navbar-light" id="mainNav">
-        <div class="container"><input type="text" id="location" class="nav_loc" placeholder="위치정보"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><button class="btn_up" type="button">등록</button><input type="text" id="location" class="nav_loc" placeholder="위치정보">
             <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link active fa fa-home" href="index.html">동네가게</a></li>
-                    <li class="nav-item"><a class="nav-link fa fa-table" href="menu.html">&nbsp;메뉴판</a></li>
-                    <li class="nav-item"><a class="nav-link fa fa-book" href="review.html">&nbsp;리뷰</a></li>
-                    <li class="nav-item"><a class="nav-link fa fa-envelope" href="contacts.html">&nbsp;문의</a></li>
-                    <li class="nav-item"></li>
-                </ul><a class="btn btn-primary shadow" role="button" id="login" href="login.html">로그인</a><a id="signup" class="btn btn-primary" role="button" href="signup.html">회원가입</a><a id="cart" class="btn btn-primary" role="button" href="shopping-cart.html">장바구니</a>
+                <ul class="navbar-nav mx-auto navbar-expand-md">
+                    <li class="nav-item"><a class="btn_m c" href="index.html"><img src="./assets/img/home.svg" alt="Home"></a></li>
+                    <li class="nav-item"><a class="btn_m c" href="menu.html"><img src="./assets/img/clipboard.svg" alt="Menu"></a></li>
+                    <li class="nav-item"><a class="btn_m c" href="review.html"><img src="./assets/img/pen-tool.svg" alt="review"></a></li>
+                    <li class="nav-item"><a class="btn_m c" href="contacts.html"><img src="./assets/img/message-circle.svg" alt="qna"></a></li>
+                </ul>
+                <a id="login" role="button" href="login.html" class="btn btn_e">로그인</a>
+                <a id="signup" role="button" href="signup.html" class="btn btn_e">회원가입</a>
+                <a id="cart" role="button" href="shopping-cart.html" class="btn btn_e">장바구니</a>
             </div>
         </div>
     </nav>
-    <header class="bg-primary-gradient">
-        <div class="container pt-4 pt-xl-5"><img src="assets/img/brands/top_banner.png" width="100%">
-            <nav class="navbar navbar-expand-md bg-body">
-                <div class="container">
-                    <div class="collapse navbar-collapse flex-grow-0 order-md-first" id="navcol-4">
-                        <ul class="navbar-nav me-auto">
-                            <li class="nav-item"></li>
-                            <li class="nav-item"></li>
-                        </ul>
-                        <div class="d-md-none my-2"><button class="btn btn-light me-2" type="button">Button</button><button class="btn btn-primary" type="button">Button</button></div>
-                    </div><a href="#"><img id="category" class="category" src="assets/img/products/cate_asian.png" width="100px" href="#"></a><a href="#"><img id="category" class="category" src="assets/img/products/cate_china.png" width="100px" href="#"></a><a href="#"><img id="category" class="category" src="assets/img/products/cate_chicken.png" width="100px" href="#"></a><a href="#"><img id="category" class="category" src="assets/img/products/cate_disert.png" width="100px" href="#"></a><a href="#"><img id="category" src="assets/img/products/cate_jpan.png" width="100px" href="#"></a><a href="#"><img id="category" class="category" src="assets/img/products/cate_kor.png" width="100px" href="#"></a><a href="#"><img id="category" src="assets/img/products/cate_leg.png" width="100px" href="#"></a><a href="#"><img id="category" class="category" src="assets/img/products/cate_night.png" width="100px" href="#"></a><a href="#"><img id="category" class="category" src="assets/img/products/cate_past.png" width="100px" href="#"></a><a href="#"><img id="category" class="category" src="assets/img/products/cate_pizza.png" width="100px" href="#"></a>
-                    <div class="d-none d-md-block"></div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="bg-primary-gradient">
+        <!-- Top Banner -->
+        <div class="container pt-4 pt-xl-5 c"><img class="tt_image" src="assets/img/brands/top_banner.png"></div>
+
+        <!-- Category Menupan -->
+        <div class="container pt-4 pt-xl-1 c">
+            <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_asian.png" width="100px" href="#"></a>
+            <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_china.png" width="100px" href="#"></a>
+            <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_chicken.png" width="100px" href="#"></a>
+            <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_disert.png" width="100px" href="#"></a>
+            <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_jpan.png" width="100px" href="#"></a>
+            <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_kor.png" width="100px" href="#"></a>
+            <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_leg.png" width="100px" href="#"></a>
+            <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_night.png" width="100px" href="#"></a>
+            <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_past.png" width="100px" href="#"></a>
+            <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_pizza.png" width="100px" href="#"></a>
+        </div>
+        
+        <!-- line -->
+        <div class="container pt-4 pt-xl-1 c"><hr></div>
+
+
+        <!-- intro banner -->
+        <div class="container pt-4 pt-xl-5 c"><img src="assets/img/products/dongne_store.jpg" width="100%"></div>
+
+        <!-- Time Sale -->
+        <div class="container pt-4 pt-xl-5 c"><h1 class="fw-bold st">Time Sale</h1></div>
+        <div class="container pt-4 pt-xl-5 c">
+            <div class="row row-cols-md-3 d-flex justify-content-center">
+                <div class="col mb-3">
+                    <div class="card bg-primary-subtle">
+                        <div class="card-body text-center px-4 py-5 px-md-5"><img src="assets/img/products/sale_a.png" width="100%"></div>
+                    </div>
                 </div>
-            </nav>
-            <div class="row pt-1">
-                <div class="col-12 col-lg-10 col-xl-10 mx-auto">
-                    <div class="position-relative" style="display: flex;flex-wrap: wrap;justify-content: flex-end;">
-                        <div style="position: relative;flex: 0 0 45%;transform: translate3d(-15%, 35%, 0);"></div>
-                        <div style="position: relative;flex: 0 0 60%;transform: translate3d(0, 0%, 0);"></div>
+                <div class="col mb-3">
+                    <div class="card bg-secondary-subtle">
+                        <div class="card-body text-center px-4 py-5 px-md-5"><img src="assets/img/products/sale_b.png" width="100%"></div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card bg-info-subtle">
+                        <div class="card-body text-center px-4 py-5 px-md-5"><img src="assets/img/products/sale_a.png" width="100%"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-    <section class="py-1"></section>
-    <section>
-        <div class="container py-1">
-            <section class="py-0">
-                <section class="py-0"><img src="assets/img/products/dongne_store.jpg" width="100%">
-                    <div class="container">
-                        <div class="border rounded border-0 d-flex flex-column justify-content-between align-items-center flex-lg-row bg-primary-gradient p-4 p-lg-5">
-                            <div class="text-center text-lg-start py-3 py-lg-1"></div>
-                            <form class="d-flex justify-content-center flex-wrap flex-lg-nowrap" method="post" data-bs-theme="light">
-                                <div class="my-2"></div>
-                                <div class="my-2"></div>
-                            </form>
-                        </div>
-                    </div>
-                </section>
-                <section class="py-0">
-                    <div class="row mb-5">
-                        <div class="col-md-8 col-xl-6 text-center mx-auto">
-                            <h2 class="fw-bold">Time Sale</h2>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <div class="container py-5">
-                        <div class="mx-auto" style="max-width: 900px;">
-                            <div class="row row-cols-1 row-cols-md-2 d-flex justify-content-center">
-                                <div class="col mb-4">
-                                    <div class="card bg-primary-subtle">
-                                        <div class="card-body text-center px-4 py-5 px-md-5"><img src="assets/img/products/sale_a.png" width="350px"><button class="btn btn-primary btn-sm" type="button">Learn more</button></div>
-                                    </div>
-                                </div>
-                                <div class="col mb-4">
-                                    <div class="card bg-secondary-subtle">
-                                        <div class="card-body text-center px-4 py-5 px-md-5"><img src="assets/img/products/sale_b.png" width="350px"><button class="btn btn-secondary btn-sm" type="button">Learn more</button></div>
-                                    </div>
-                                </div>
-                                <div class="col mb-4">
-                                    <div class="card bg-info-subtle">
-                                        <div class="card-body text-center px-4 py-5 px-md-5"><img src="assets/img/products/sale_a.png" width="350px"><button class="btn btn-info btn-sm" type="button">Learn more</button></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section class="py-5">
-                    <div class="container py-5">
-                        <div class="row mb-4 mb-lg-5">
-                            <div class="col-md-8 col-xl-6 text-center mx-auto">
-                                <h2 class="fw-bold">EVENT COUPON</h2>
-                            </div>
-                        </div>
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 d-sm-flex justify-content-sm-center">
-                            <div class="col mb-4">
-                                <div class="d-flex flex-column align-items-center align-items-sm-start">
-                                    <p class="bg-body-tertiary border rounded border-0 p-4"><img src="assets/img/team/coupon_a.jpg" width="300px"></p><button class="btn btn-primary" type="button" style="margin: 0px auto">쿠폰받기</button>
-                                    <div class="d-flex">
-                                        <div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-4">
-                                <div class="d-flex flex-column align-items-center align-items-sm-start">
-                                    <p class="bg-body-tertiary border rounded border-0 p-4"><img src="assets/img/team/coupon_b.jpg" width="300px"></p><button class="btn btn-primary" type="button" style="margin: 0px auto"><strong>쿠폰받기</strong></button>
-                                    <div class="d-flex">
-                                        <div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-4">
-                                <div class="d-flex flex-column align-items-center align-items-sm-start">
-                                    <p class="bg-body-tertiary border rounded border-0 p-4"><img src="assets/img/team/coupon_c.jpg" width="300px"></p>
-                                    <div class="btn-group" role="group"></div>
-                                    <div class="d-flex">
-                                        <div></div>
-                                    </div><button class="btn btn-primary" type="button" style="margin: 0px auto"><strong><span style="background-color: rgb(47, 84, 207);">쿠폰받기</span></strong></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </section>
-            <div class="mx-auto" style="max-width: 900px;"></div>
+
+        <!-- line -->
+        <div class="container pt-4 pt-xl-1 c"><hr></div>
+
+
+
+
+        <!-- Event Coupon -->
+        <div class="container pt-4 pt-xl-5 c">
+
+                <h2 class="fw-bold st">EVENT COUPON</h2>
+
+            <div class="row row-cols-md-3 d-flex justify-content-center">
+                <div class="d-flex flex-column align-items-center align-items-sm-start">
+                    <p class="bg-body-tertiary border rounded border-0 p-4 c"><img src="assets/img/team/coupon_a.jpg" width="100%"></p><button class="btn_e" type="button" style="margin: 0px auto">쿠폰받기</button>
+                </div>                <div class="d-flex flex-column align-items-center align-items-sm-start">
+                    <p class="bg-body-tertiary border rounded border-0 p-4 c"><img src="assets/img/team/coupon_b.jpg" width="100%"></p><button class="btn_e" type="button" style="margin: 0px auto">쿠폰받기</button>
+                </div>                <div class="d-flex flex-column align-items-center align-items-sm-start">
+                    <p class="bg-body-tertiary border rounded border-0 p-4 c"><img src="assets/img/team/coupon_c.jpg" width="100%"></p><button class="btn_e" type="button" style="margin: 0px auto">쿠폰받기</button>
+                </div>
+            </div>
         </div>
-    </section>
-    <section class="py-5 mt-2"></section>
+
+
+    </div>
+    
+
+
+        <!-- line -->
+        <div class="container pt-4 pt-xl-1 c"><hr></div>
+
+
+
+    <!-- News Letter -->
+    
+
     <section class="py-5">
         <div class="container">
             <div class="border rounded border-0 border-white d-flex flex-column justify-content-between align-items-center flex-lg-row bg-primary-gradient p-4 p-lg-5">
-                <div class="text-center text-lg-start py-3 py-lg-1">
-                    <h2 class="fw-bold mb-2">Subscribe to our newsletter</h2>
-                </div>
-                <form class="d-flex justify-content-center flex-wrap flex-lg-nowrap" method="post" data-bs-theme="light">
-                    <div class="my-2"><input class="border rounded-pill shadow-sm form-control" type="email" name="email" placeholder="Your Email"></div>
-                    <div class="my-2"><button class="btn btn-primary shadow ms-2" type="submit">등록</button></div>
+                
+                <form class="form-control" method="post" data-bs-theme="light">
+                    <div class="mb-2"><input class="form-control" type="email" name="email" placeholder="구독 알림 받기 이메일을 등록하세요"></div>
+                    <div class="my-2"><button class="btn_e btn-primary shadow ms-2" type="submit">등록</button></div>
                 </form>
             </div>
         </div>
     </section>
-    <footer class="bg-primary-gradient">
+
+
+
+        <!-- line -->
+        <div class="container pt-4 pt-xl-1 c"><hr></div>
+
+
+
+
+    <!-- footer -->
+    <footer class="bg_black">
         <div class="container py-4 py-lg-5">
             <hr>
             <div class="text-muted d-flex justify-content-between align-items-center pt-3">
