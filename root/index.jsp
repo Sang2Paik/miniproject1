@@ -6,7 +6,7 @@
 
     
     	<!-- Header -->
-		<%@ include file="header.jsp" %>
+	<%@ include file="header.jsp" %>
         <!-- Navi -->
         <%@ include file="navi.jsp" %>
 
