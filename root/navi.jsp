@@ -42,19 +42,19 @@
         <!-- Top Banner -->
         <div class="container pt-4 pt-xl-5 c"><img class="tt_image" src="assets/img/brands/top_banner.png"></div>
 
-        <!-- Category Menupan -->
+        <!-- Category Menupan  메뉴링크 수정 01.23. 17:38 최병훈--> 
         <div class="container pt-4 pt-xl-1 c">
             <a class="btn_e" href="#"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_market.png" width="100px" href="#" alt="전통시장"></a>
-            <a class="btn_e" href="#"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_kor.png" width="100px" href="#" alt="한식"></a>
-            <a class="btn_e" href="#"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_china.png" width="100px" href="#" alt="중식"></a>
-            <a class="btn_e" href="#"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_jpan.png" width="100px" href="#" alt="일식"></a>
-            <a class="btn_e" href="#"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_asian.png" width="100px" href="#" alt="동양"></a>
-            <a class="btn_e" href="#"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_night.png" width="100px" href="#" alt="야식"></a>
-            <a class="btn_e" href="#"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_past.png" width="100px" href="#" alt="분식"></a>
-            <a class="btn_e" href="#"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_chicken.png" width="100px" href="#" alt="치킨"></a>
-            <a class="btn_e" href="#"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_disert.png" width="100px" href="#" alt="후식"></a>
-            <a class="btn_e" href="#"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_leg.png" width="100px" href="#" alt="족발"></a>
-            <a class="btn_e" href="#"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_pizza.png" width="100px" href="#" alt="피자"></a>
+            <a class="btn_e" href="menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_kor.png" width="100px" href="#" alt="한식"></a>
+            <a class="btn_e" href="menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_china.png" width="100px" href="#" alt="중식"></a>
+            <a class="btn_e" href="menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_jpan.png" width="100px" href="#" alt="일식"></a>
+            <a class="btn_e" href="menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_asian.png" width="100px" href="#" alt="동양"></a>
+            <a class="btn_e" href="menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_night.png" width="100px" href="#" alt="야식"></a>
+            <a class="btn_e" href="menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_past.png" width="100px" href="#" alt="분식"></a>
+            <a class="btn_e" href="menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_chicken.png" width="100px" href="#" alt="치킨"></a>
+            <a class="btn_e" href="menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_disert.png" width="100px" href="#" alt="후식"></a>
+            <a class="btn_e" href="menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_leg.png" width="100px" href="#" alt="족발"></a>
+            <a class="btn_e" href="menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_pizza.png" width="100px" href="#" alt="피자"></a>
         </div>
         
         <!-- line -->
