@@ -23,3 +23,93 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/bold-and-bright.js"></script>
+    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!-- jQuery추가 백상희-->
+    <!-- 주소검색API -->
+	<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script type="text/javascript">/* 백상희 javascript 수정 */
+    
+    $("#user_id").keyup(function(event){
+    	
+    	var id_regExp = /^[a-z]+[a-z0-9]{5,19}$/g;
+    	   	
+    	let user_id = $(this).val();
+    	
+    	if(id_regExp.test(user_id)==false){
+    		$("#user_id_msg").html("영문자로 시작하는 6~20자(숫자포함 가능)").css("color","red");
+    		$("#user_id_msg").css("font-size","15px");
+    		return;
+    	}
+    	
+    	$.ajax({
+    		
+    		url : "check_id.do",
+    		data: {"user_id": user_id},
+    		dataType: "json",
+    		success: function(res_data){
+    			if(res_data.result){
+    				$("#user_id_msg").html("사용가능한 아이디입니다.").css("color","blue");
+    				$("#user_id_msg").css("font-size","15px");
+    			}else{
+    				$("#user_id_msg").html("중복된 아이디입니다.").css("color","red");	
+    				$("#user_id_msg").css("font-size","15px");
+    			}
+    		},
+    		error: function(err){
+    			alert(err.responseText);
+    		}	
+    	})
+
+    })/* function : keyup for id */
+    
+    $("#user_pwd").keyup(function(event){
+    	
+    	var pwd_regExp = /^[a-z]+[a-z0-9]{5,19}$/g;
+    	let user_pwd = $(this).val();
+    	
+    	if(pwd_regExp.test(user_pwd)==false){
+    		$("#user_pwd_msg").html("영문자로 시작하는 6~20자(숫자포함 가능)").css("color","red");
+    		$("#user_pwd_msg").css("font-size","15px");    		
+    	}else{
+    		$("#user_pwd_msg").html("");
+    	}
+    	
+    })/* function : keyup for pwd */
+    
+    $("#user_cellphone").keyup(function(event){
+    	
+    	var cellphone_regExp = /^01(?:0|1|[6-9])-(?:\d{3}|\d{4})-\d{4}$/;
+    	let user_cellphone = $(this).val();
+    	
+    	if(cellphone_regExp.test(user_cellphone)==false){
+    		$("#user_cellphone_msg").html("예시: 010-1234-4567 ").css("color","red");
+    		$("#user_cellphone_msg").css("font-size","15px"); 
+    	}else{
+    		$("#user_cellphone_msg").html("");
+    	}
+    	
+    })/* function : keyup for cellphone */
+    
+    $("#user_email").keyup(function(event){
+    	
+    	var email_regExp = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
+    	let user_email = $(this).val();
+    	
+    	if(email_regExp.test(user_email)==false){
+    		$("#user_email_msg").html("유효하지 않은 이메일 형식입니다.").css("color","red");
+    		$("#user_email_msg").css("font-size","15px"); 
+    	}else{
+    		$("#user_email_msg").html("");
+    	}
+    })/* function : keyup for email */
+    
+    
+   function handleRadioClick(radioButton){
+    
+	   var user_grade = radioButton.value;
+       location.href="../root/signupform.do?user_grade="+user_grade;
+    }
+    
+    
+    
+    </script>
