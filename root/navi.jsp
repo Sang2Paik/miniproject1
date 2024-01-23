@@ -25,6 +25,7 @@
 
         <!-- Category Menupan -->
         <div class="container pt-4 pt-xl-1 c">
+            <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_market.png" width="100px" href="#"></a>
             <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_asian.png" width="100px" href="#"></a>
             <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_china.png" width="100px" href="#"></a>
             <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_chicken.png" width="100px" href="#"></a>
