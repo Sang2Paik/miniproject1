@@ -1,4 +1,5 @@
 <%-- 이영준(2/23 12:00) --%>
+<%-- Category Menupan  메뉴링크 수정 01.23. 17:38 최병훈--%> 
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
