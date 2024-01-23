@@ -1,3 +1,6 @@
+index.html은 사용하지 않아 삭제 2024.01.23 AM 11:15
+index.jsp가 메인 파일이에요~
+
 # 2024.01.23 AM 05:34 File Update
 
 index.jsp로 변경 (UI수정, 지저분한 코드정리, incrude 방식으로 적용)
