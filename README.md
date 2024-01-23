@@ -1,3 +1,9 @@
+최시환
+- 2024.01.23 PM 11:50
+coupon VO,DAO 및 root폴더 하위에 필요 임시 coupon jsp생성 , jps로 임시 관리자버튼 만들어서 coupon INSERT기능 및 삭제버튼 구현
+추후에 coupon CRUD 및 관리자 coupon 추가할 예정
+login 기능 , 회원가입 기능 경로 연결 잘못되어 있어서 경로 설정(+회원가입은 test_signup.jsp 없길래 sighup.jsp로 설정)
+
 백상희
 - 2024.01.23 PM 10:09 navi.jsp 수정
 - 2024.01.23 PM 10:09 login.html  수정
