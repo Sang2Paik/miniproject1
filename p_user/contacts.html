@@ -5,25 +5,41 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Contacts - Brand</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
-    <link rel="stylesheet" href="assets/css/Navbar-Centered-Brand-icons.css">
+    <link rel="stylesheet" href="../assets/css/Navbar-Centered-Brand-icons.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md sticky-top navbar-shrink py-3 navbar-light" id="mainNav">
-        <div class="container"><input type="text" id="location" class="nav_loc" placeholder="위치정보"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container">
+        <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <button class="btn_up" type="button" onclick="find_addr();">등록</button><input type="text" id="location" class="nav_loc" placeholder="위치정보">
             <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link fa fa-home" href="index.html">동네가게</a></li>
-                    <li class="nav-item"><a class="nav-link fa fa-table" href="menu.html">&nbsp;메뉴판</a></li>
-                    <li class="nav-item"><a class="nav-link fa fa-book" href="review.html">&nbsp;리뷰</a></li>
-                    <li class="nav-item"><a class="nav-link active fa fa-envelope" href="contacts.html">&nbsp;문의</a></li>
-                    <li class="nav-item"></li>
-                </ul><a class="btn btn-primary shadow" role="button" id="login" href="login.html">로그인</a><a id="signup" class="btn btn-primary" role="button" href="signup.html">회원가입</a><a id="cart" class="btn btn-primary" role="button" href="shopping-cart.html">장바구니</a>
+                <ul class="navbar-nav mx-auto navbar-expand-md"><!-- 최병훈 01.24 AM 05:21 링크수정 -->
+                    <li class="nav-item"><a class="btn_m c" href="index.jsp"><img src="../assets/img/home.svg" alt="Home"></a></li>
+                    <li class="nav-item"><a class="btn_m c" href="../menu/menu.jsp"><img src="../assets/img/clipboard.svg" alt="Menu"></a></li>
+                    <li class="nav-item"><a class="btn_m c" href="../review/review.jsp"><img src="../assets/img/pen-tool.svg" alt="review"></a></li>
+                    <li class="nav-item"><a class="btn_m c" href="../user/contacts.jsp"><img src="../assets/img/message-circle.svg" alt="qna"></a></li>
+                </ul>
+		   <c:if test="${ empty sessionScope.user }"><!-- 백상희 오후 10시 14분 수정 -->
+                	<a id="login" role="button" href="../root/member/loginform.do" class="btn btn_e">로그인</a>
+               		<a id="signup" role="button" href="../root/member/signupform.do" class="btn btn_e">회원가입</a> 
+                </c:if>
+                
+                <c:if test="${ not empty sessionScope.user }"><!-- 백상희 오후 10시 14분 수정 -->
+                	<span>${ sessionScope.user.user_name } 님 환영합니다.</span>
+                	<a id="login" role="button" href="../root/member/logout.do" class="btn btn_e">로그아웃</a>
+                	<a id="cart" role="button" href="../p_store/shopping-cart.jsp" class="btn btn_e">장바구니</a>
+                </c:if>
             </div>
         </div>
     </nav>
+
+
+
+
+
     <section class="py-5">
         <div class="container py-5">
             <div class="row mb-5">

@@ -6,9 +6,9 @@
 
     
     	<!-- Header -->
-	<%@ include file="header.jsp" %>
+	<%@ include file="../header.jsp" %>
         <!-- Navi -->
-        <%@ include file="navi.jsp" %>
+        <%@ include file="../navi.jsp" %>
 
 
 
@@ -48,9 +48,9 @@
 
       <!-- Gallery item -->
       <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><a href="food_detail.jsp"><img id="menu_photo" name="menu_photo" src="./assets/img/brands/food_p01.jpg" alt="" class="img-fluid card-img-top"></a>
+        <div class="bg-white rounded shadow-sm"><a href="menu_detail.jsp"><img id="menu_photo" name="menu_photo" src="../assets/img/food_p01.jpg" alt="" class="img-fluid card-img-top"></a>
           <div class="p-4">
-            <h5> <a href="food_detail.jsp" class="text-dark">스시마츠모토 4.0</a></h5>
+            <h5> <a href="menu_detail.jsp" class="text-dark">스시마츠모토 4.0</a></h5>
             <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
             <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
               <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold"></span></p>
@@ -63,9 +63,9 @@
 
       <!-- Gallery item -->
       <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><a href="food_detail.jsp"><img id="menu_photo" name="menu_photo" src="./assets/img/brands/food_p02.jpg" alt="" class="img-fluid card-img-top"></a>
+        <div class="bg-white rounded shadow-sm"><a href="menu_detail.jsp"><img id="menu_photo" name="menu_photo" src="../assets/img/food_p02.jpg" alt="" class="img-fluid card-img-top"></a>
           <div class="p-4">
-            <h5> <a href="food_detail.jsp" class="text-dark">꿰뚫 평가중</a></h5>
+            <h5> <a href="menu_detail.jsp" class="text-dark">꿰뚫 평가중</a></h5>
             <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
             <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
               <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold"></span></p>
@@ -78,9 +78,9 @@
 
       <!-- Gallery item -->
       <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><a href="food_detail.jsp"><img id="menu_photo" name="menu_photo" src="./assets/img/brands/food_p03.jpg" alt="" class="img-fluid card-img-top"></a>
+        <div class="bg-white rounded shadow-sm"><a href="menu_detail.jsp"><img id="menu_photo" name="menu_photo" src="../assets/img/food_p03.jpg" alt="" class="img-fluid card-img-top"></a>
           <div class="p-4">
-            <h5> <a href="food_detail.jsp" class="text-dark">비금도 청담점</a></h5>
+            <h5> <a href="menu_detail.jsp" class="text-dark">비금도 청담점</a></h5>
             <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
             <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
               <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold"></span></p>
@@ -93,9 +93,9 @@
 
       <!-- Gallery item -->
       <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><a href="food_detail.jsp"><img id="menu_photo" name="menu_photo" src="./assets/img/brands/food_p04.jpg" alt="" class="img-fluid card-img-top"></a>
+        <div class="bg-white rounded shadow-sm"><a href="menu_detail.jsp"><img id="menu_photo" name="menu_photo" src="../assets/img/food_p04.jpg" alt="" class="img-fluid card-img-top"></a>
           <div class="p-4">
-            <h5> <a href="food_detail.jsp" class="text-dark">권숙수 무침</a></h5>
+            <h5> <a href="menu_detail.jsp" class="text-dark">권숙수 무침</a></h5>
             <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
             <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
               <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold"></span></p>
@@ -108,7 +108,7 @@
 
       <!-- Gallery item -->
       <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><a href="food_detail.jsp"><img id="menu_photo" name="menu_photo" src="./assets/img/brands/food_p05.jpg" alt="" class="img-fluid card-img-top"></a>
+        <div class="bg-white rounded shadow-sm"><a href="menu_detail.jsp"><img id="menu_photo" name="menu_photo" src="../assets/img/food_p05.jpg" alt="" class="img-fluid card-img-top"></a>
           <div class="p-4">
             <h5> <a href="food_detail.jsp" class="text-dark">Pineapple</a></h5>
             <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
@@ -123,9 +123,9 @@
 
       <!-- Gallery item -->
       <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
-        <div class="bg-white rounded shadow-sm"><a href="food_detail.jsp"><img id="menu_photo" name="menu_photo" src="./assets/img/brands/food_p06.jpg" alt="" class="img-fluid card-img-top"></a>
+        <div class="bg-white rounded shadow-sm"><a href="menu_detail.jsp"><img id="menu_photo" name="menu_photo" src="../assets/img/food_p06.jpg" alt="" class="img-fluid card-img-top"></a>
           <div class="p-4">
-            <h5> <a href="food_detail.jsp" class="text-dark">Yellow banana</a></h5>
+            <h5> <a href="menu_detail.jsp" class="text-dark">Yellow banana</a></h5>
             <p class="small text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
             <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
               <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold"></span></p>
@@ -150,7 +150,7 @@
 
 
 <!-- Navi -->
-        <%@ include file="footer.jsp" %>
+        <%@ include file="../main/footer.jsp" %>
 
 
     </body>

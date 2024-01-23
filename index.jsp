@@ -6,9 +6,9 @@
 
     
     	<!-- Header -->
-	<%@ include file="header.jsp" %>
+	    <%@ include file="./_main/header.jsp" %>
         <!-- Navi -->
-        <%@ include file="navi.jsp" %>
+        <%@ include file="./_main/navi.jsp" %>
 
 
 
@@ -92,7 +92,7 @@
 
 
 <!-- Navi -->
-        <%@ include file="footer.jsp" %>
+        <%@ include file="./_main/footer.jsp" %>
 
 
     </body>

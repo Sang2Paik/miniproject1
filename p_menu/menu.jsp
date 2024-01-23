@@ -6,9 +6,9 @@
 
     
     	<!-- Header -->
-		<%@ include file="header.jsp" %>
+		<%@ include file="../main/header.jsp" %>
         <!-- Navi -->
-        <%@ include file="navi.jsp" %>
+        <%@ include file="../main/navi.jsp" %>
 
 
 
@@ -40,7 +40,7 @@
         <div class="container pt-4 pt-xl-1 c"><hr></div>
 
         <!-- Footer -->
-        <%@ include file="footer.jsp" %>
+        <%@ include file="../main/footer.jsp" %>
 
 
 
