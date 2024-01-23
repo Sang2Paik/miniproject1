@@ -13,11 +13,10 @@
 
 
 
-        <!-- intro banner -->
-        <div class="container pt-4 pt-xl-5 c"><img src="assets/img/products/dongne_store.jpg" width="100%"></div>
+
 
         
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+
       <script type="text/javascript" src="//code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 
     <!--  menu Style  -->
