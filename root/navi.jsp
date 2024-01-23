@@ -30,9 +30,16 @@
                     <li class="nav-item"><a class="btn_m c" href="review.jsp"><img src="./assets/img/pen-tool.svg" alt="review"></a></li>
                     <li class="nav-item"><a class="btn_m c" href="contacts.jsp"><img src="./assets/img/message-circle.svg" alt="qna"></a></li>
                 </ul>
-                <a id="login" role="button" href="login.jsp" class="btn btn_e">로그인</a>
-                <a id="signup" role="button" href="signup.jsp" class="btn btn_e">회원가입</a>
-                <a id="cart" role="button" href="shopping-cart.jsp" class="btn btn_e">장바구니</a>
+		   <c:if test="${ empty sessionScope.user }"><!-- 백상희 오후 4시 22분 수정 -->
+                	<a id="login" role="button" href="loginform.do" class="btn btn_e">로그인</a>
+               		<a id="signup" role="button" href="signupform.do" class="btn btn_e">회원가입</a> 
+                </c:if>
+                
+                <c:if test="${ not empty sessionScope.user }"><!-- 백상희 오후 4시 22분 수정 -->
+                	<span>${ sessionScope.user.user_name } 님 환영합니다.</span>
+                	<a id="login" role="button" href="logout.do" class="btn btn_e">로그아웃</a>
+                	<a id="cart" role="button" href="shopping-cart.jsp" class="btn btn_e">장바구니</a>
+                </c:if>
             </div>
         </div>
     </nav>
