@@ -6,10 +6,10 @@
         <div class="container"><button class="btn_up" type="button">등록</button><input type="text" id="location" class="nav_loc" placeholder="위치정보">
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto navbar-expand-md">
-                    <li class="nav-item"><a class="btn_m c" href="index.html"><img src="./assets/img/home.svg" alt="Home"></a></li>
-                    <li class="nav-item"><a class="btn_m c" href="menu.html"><img src="./assets/img/clipboard.svg" alt="Menu"></a></li>
-                    <li class="nav-item"><a class="btn_m c" href="review.html"><img src="./assets/img/pen-tool.svg" alt="review"></a></li>
-                    <li class="nav-item"><a class="btn_m c" href="contacts.html"><img src="./assets/img/message-circle.svg" alt="qna"></a></li>
+                    <li class="nav-item"><a class="btn_m c" href="index.jsp"><img src="./assets/img/home.svg" alt="Home"></a></li>
+                    <li class="nav-item"><a class="btn_m c" href="menu.jsp"><img src="./assets/img/clipboard.svg" alt="Menu"></a></li>
+                    <li class="nav-item"><a class="btn_m c" href="review.jsp"><img src="./assets/img/pen-tool.svg" alt="review"></a></li>
+                    <li class="nav-item"><a class="btn_m c" href="contacts.jsp"><img src="./assets/img/message-circle.svg" alt="qna"></a></li>
                 </ul>
                 <a id="login" role="button" href="login.jsp" class="btn btn_e">로그인</a>
                 <a id="signup" role="button" href="signup.jsp" class="btn btn_e">회원가입</a>
