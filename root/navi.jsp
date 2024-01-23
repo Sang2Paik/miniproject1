@@ -11,9 +11,9 @@
                     <li class="nav-item"><a class="btn_m c" href="review.html"><img src="./assets/img/pen-tool.svg" alt="review"></a></li>
                     <li class="nav-item"><a class="btn_m c" href="contacts.html"><img src="./assets/img/message-circle.svg" alt="qna"></a></li>
                 </ul>
-                <a id="login" role="button" href="login.html" class="btn btn_e">로그인</a>
-                <a id="signup" role="button" href="signup.html" class="btn btn_e">회원가입</a>
-                <a id="cart" role="button" href="shopping-cart.html" class="btn btn_e">장바구니</a>
+                <a id="login" role="button" href="login.jsp" class="btn btn_e">로그인</a>
+                <a id="signup" role="button" href="signup.jsp" class="btn btn_e">회원가입</a>
+                <a id="cart" role="button" href="shopping-cart.jsp" class="btn btn_e">장바구니</a>
             </div>
         </div>
     </nav>
