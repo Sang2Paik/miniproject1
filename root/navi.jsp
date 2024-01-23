@@ -25,17 +25,17 @@
 
         <!-- Category Menupan -->
         <div class="container pt-4 pt-xl-1 c">
-            <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_market.png" width="100px" href="#"></a>
-            <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_asian.png" width="100px" href="#"></a>
-            <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_china.png" width="100px" href="#"></a>
-            <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_chicken.png" width="100px" href="#"></a>
-            <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_disert.png" width="100px" href="#"></a>
-            <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_jpan.png" width="100px" href="#"></a>
-            <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_kor.png" width="100px" href="#"></a>
-            <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_leg.png" width="100px" href="#"></a>
-            <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_night.png" width="100px" href="#"></a>
-            <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_past.png" width="100px" href="#"></a>
-            <a class="btn_e" href="#"><img id="category" class="category" src="assets/img/products/cate_pizza.png" width="100px" href="#"></a>
+            <a class="btn_e" href="#"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_market.png" width="100px" href="#" alt="전통시장"></a>
+            <a class="btn_e" href="#"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_asian.png" width="100px" href="#"></a>
+            <a class="btn_e" href="#"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_china.png" width="100px" href="#"></a>
+            <a class="btn_e" href="#"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_chicken.png" width="100px" href="#"></a>
+            <a class="btn_e" href="#"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_disert.png" width="100px" href="#"></a>
+            <a class="btn_e" href="#"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_jpan.png" width="100px" href="#"></a>
+            <a class="btn_e" href="#"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_kor.png" width="100px" href="#"></a>
+            <a class="btn_e" href="#"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_leg.png" width="100px" href="#"></a>
+            <a class="btn_e" href="#"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_night.png" width="100px" href="#"></a>
+            <a class="btn_e" href="#"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_past.png" width="100px" href="#"></a>
+            <a class="btn_e" href="#"><img id="food_category_name" name="food_category_name" class="category" src="assets/img/products/cate_pizza.png" width="100px" href="#"></a>
         </div>
         
         <!-- line -->
