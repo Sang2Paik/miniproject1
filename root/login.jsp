@@ -6,12 +6,9 @@
 
     
     	<!-- Header -->
-		<%@ include file="header.jsp" %>
+		<%@ include file="../header.jsp" %>
         <!-- Navi -->
-        <%@ include file="navi.jsp" %>
-
-
-
+        <%@ include file="../navi.jsp" %>
 
         <!-- login Form -->
         
@@ -34,7 +31,11 @@
                             <form method="post" data-bs-theme="light">
                                 <div class="mb-3"><input id="user_id" name="user_id" class="form-control" type="text" placeholder="아이디"></div>
                                 <div class="mb-3"><input id="user_pwd" name="user_pwd" class="form-control" type="password" placeholder="패스워드"></div>
-                                <div class="mb-3"><button class="btn btn-primary shadow d-block w-100" type="submit">Log in</button></div>
+                                
+                               <!-- 백상희: 20240124 수정 시작 -->
+                                <div class="mb-3"><input class="btn btn-primary shadow d-block w-100" type="button" value="Log in" onclick="send(this.form);"></div>
+                                
+                                <!-- 백상희: 20240124 수정 끝 -->
                             </form>
                             <p class="text-muted">Forgot your password?</p>
                         </div>
@@ -43,17 +44,54 @@
             </div>
         </div>
     </section>
-    
-
-
 
 
         <!-- line -->
         <div class="container pt-4 pt-xl-1 c"><hr></div>
+<!-- 백상희: 20240124 수정 시작 -->
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 
-        <!-- Footer -->
-        <%@ include file="footer.jsp" %>
+<script type="text/javascript">
+	function show_message() {
+
+		if ("${ param.reason eq 'fail_id'}" == "true") {
+			alert("아이디가 틀렸습니다.");
+		}
+
+		if ("${ param.reason eq 'fail_pwd'}" == "true") {
+			alert("비밀번호가 틀렸습니다.");
+		}
+	}
+
+	function send(f) {
+
+		let user_id = f.user_id.value.trim();
+		let user_pwd = f.user_pwd.value.trim();
+
+		if (user_id == "") {
+			alert("아이디를 입력해주세요.");
+			f.user_id.value = "";
+			f.user_id.focus();
+			return;
+		}
+
+		if (user_pwd == "") {
+			alert("비밀번호를 입력해주세요.");
+			f.user_pwd.value = "";
+			f.user_pwd.focus();
+			return;
+		}
+
+		f.action = "login.do";
+		f.submit();
+
+	}
+</script>
+<!-- 백상희: 20240124 수정 시작 -->
+
+<!-- Footer -->
+        <%@ include file="../footer.jsp" %>
 
 
     </body>
