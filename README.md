@@ -1,7 +1,7 @@
 최병훈 : 2024.01.25 AM 08:25
 - navi.jsp 수정 (link, class 변경)- assets img폴더(img안에 하위폴더 제거함), css폴더 새로받으세요.
-- index.jsp 수정 (link, img, class 변경)
-
+- index.jsp 수정 (link, img, class 변경) 08:43
+ 
   
 백상희: 2024.01.24 
 - navi.jsp 수정
