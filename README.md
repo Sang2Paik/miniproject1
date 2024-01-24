@@ -1,3 +1,8 @@
+백상희: 2024.01.24 
+- navi.jsp 수정
+- login.jsp 수정
+- signup.jsp 수정
+
 - 최병훈 : 2024.01.24 AM 09:30 오늘할일 <br>
  : AdminPage(약식) / login.jsp / signup.jsp / menu_detail.jsp / 발표자료 초안제작
 ----------------------------------------
