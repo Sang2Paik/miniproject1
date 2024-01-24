@@ -1,4 +1,9 @@
+<%-- footer.jsp --%>
+<%-- 최병훈 2024.01.25 AM 08:55 경로수정 --%>
 
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 
     <!-- footer -->
     <footer class="bg_black">
@@ -21,8 +26,8 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="assets/js/bold-and-bright.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/js/bs-init.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/js/bold-and-bright.js"></script>
     
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!-- jQuery추가 백상희-->
     <!-- 주소검색API -->
@@ -107,7 +112,7 @@
    function handleRadioClick(radioButton){
     
 	   var user_grade = radioButton.value;
-       location.href="../root/signupform.do?user_grade="+user_grade;
+       location.href="${pageContext.request.contextPath}/signupform.do?user_grade="+user_grade;
     }
     
     
