@@ -131,8 +131,8 @@
     	let user_id = $(this).val();
     	
     	if(id_regExp.test(user_id)==false){
-    		$("#user_id_msg").html("영문자로 시작하는 6~20자(숫자포함 가능)").css("color","silver");
-    		$("#user_id_msg").css("font-size","10px");
+    		$("#user_id_msg").html("영문자로 시작하는 6~20자(숫자포함 가능)").css("color","#607d8b");
+    		$("#user_id_msg").css("font-size","12px").css("background-color","#eeeeee").css("border","#cccccc").css("padding-bottom","5px");
     		return;
     	}
     	
@@ -143,13 +143,13 @@
     		dataType: "json",
     		success: function(res_data){
     			if(res_data.result){
-    				$("#user_id_msg").html("사용가능한 아이디입니다.") .css("color","rgb(130, 203, 245)");
-    				$("#user_id_msg").css("font-size","10px");
+    				$("#user_id_msg").html("사용가능한 아이디입니다.") .css("color","#039be5");
+    				$("#user_id_msg").css("font-size","12px").css("background-color","#eeeeee").css("border","#cccccc").css("padding-bottom","5px");
     				$("#btn_signup").attr("disabled", false);
     				
     			}else{
-    				$("#user_id_msg").html("중복된 아이디입니다.") .css("color","rgb(130, 203, 245)");	
-    				$("#user_id_msg").css("font-size","10px");
+    				$("#user_id_msg").html("중복된 아이디입니다.") .css("color","#607d8b");	
+    				$("#user_id_msg").css("font-size","12px").css("background-color","#eeeeee").css("border","#cccccc").css("padding-bottom","5px");
     			}
     		},
     		error: function(err){
@@ -165,8 +165,8 @@
     	let user_pwd = $(this).val();
     	
     	if(pwd_regExp.test(user_pwd)==false){
-    		$("#user_pwd_msg").html("영문자로 시작하는 6~20자(숫자포함 가능)").css("color","silver");
-    		$("#user_pwd_msg").css("font-size","10px");    		
+    		$("#user_pwd_msg").html("영문자로 시작하는 6~20자(숫자포함 가능)").css("color","#607d8b");
+    		$("#user_pwd_msg").css("font-size","12px").css("background-color","#eeeeee").css("border","#cccccc").css("padding-bottom","5px");    		
     	}else{
     		$("#user_pwd_msg").html("");
     	}
@@ -179,8 +179,8 @@
     	let user_cellphone = $(this).val();
     	
     	if(cellphone_regExp.test(user_cellphone)==false){
-    		$("#user_cellphone_msg").html("형식에 맞춰 입력하세요.(xxx-xxxx-xxxx) ").css("color","#888");
-    		$("#user_cellphone_msg").css("font-size","12px"); 
+    		$("#user_cellphone_msg").html("형식에 맞춰 입력하세요.(xxx-xxxx-xxxx) ").css("color","#607d8b");
+    		$("#user_cellphone_msg").css("font-size","12px").css("background-color","#eeeeee").css("border","#cccccc").css("padding-bottom","5px");
     	}else{
     		$("#user_cellphone_msg").html("");
     	}
@@ -193,10 +193,10 @@
     	let user_email = $(this).val();
     	
     	if(email_regExp.test(user_email)==false){
-    		$("#user_email_msg").html("유효하지 않은 이메일 형식입니다.").css("color","#888");
-    		$("#user_email_msg").css("font-size","12px"); 
+    		$("#user_email_msg").html("유효하지 않은 이메일 형식입니다.").css("color","#607d8b");
+    		$("#user_email_msg").css("font-size","12px").css("background-color","#eeeeee").css("border","#cccccc").css("padding-bottom","5px");
     	}else{
-    		$("#user_email_msg").html("");
+    		$("#user_email_msg").html("").css("background-color","#eeeeee").css("border","#cccccc").css("padding-bottom","5px");
     	}
     })/* function : keyup for email */
     
