@@ -3,7 +3,7 @@
 - member / signup.jsp 수정
 - assest/css/form.css 추가등록
 - assest/css/style.css 업데이트 필요
-- 
+- navi_sm.jsp 추가등록 login / signup / admin 등 특정페이지 에서만 사용예정
 
 최병훈 : 2024.01.25 AM 08:25
 - navi.jsp 수정 (link, class 변경)- assets img폴더(img안에 하위폴더 제거함), css폴더 새로받으세요.
