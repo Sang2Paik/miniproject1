@@ -2,6 +2,7 @@
 <%-- 최병훈 Category Menupan  메뉴링크 수정 01.23. 17:38 --%> 
 <%-- 최병훈 전체링크 수정 01.24. 05:20 --%> 
 <%-- 최병훈 (01/25. 08:30 - file/link 재설정, class수정) --%> 
+<%-- 최병훈 (01/25. 10:02 - category alt="숫자로 변경") --%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -46,9 +47,9 @@
         <span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto navbar-expand-sd">
-                <!-- 최병훈 : 2.240124 AM 05:21 링크수정 -->
+                <!-- 최병훈 01.24 AM 05:21 링크수정 -->
                 <!-- 백상희 : 20240124 경로 수정 -->
-                <!-- 최병훈 : 20240125 AM 08:30 href/class 수정 css파일다시 받으세용~ -->
+                <!-- 백상희 : 20240125 href/class 수정 css파일다시 받으세용~ -->
                     <li class="nav-item"><a class="btn_m c" href="${ pageContext.request.contextPath }/index.jsp"><img src="${ pageContext.request.contextPath }/assets/img/home.svg" alt="Home"></a></li>
                     <li class="nav-item"><a class="btn_m c" href="${ pageContext.request.contextPath }/seller/menu.jsp"><img src="${ pageContext.request.contextPath }/assets/img/clipboard.svg" alt="Menu"></a></li>
                     <li class="nav-item"><a class="btn_m c" href="${ pageContext.request.contextPath }/review/review.jsp"><img src="${ pageContext.request.contextPath }/assets/img/pen-tool.svg" alt="review"></a></li>
@@ -96,18 +97,18 @@
         <!-- 백상희 : 20240124 수정 시작 -->
         <!-- 최병훈 : 20240125 href/class 수정 css파일다시 받으세용~ -->
         <div id="menu_box" class="container pt-4 pt-xl-1 c">
-        	<div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_brand.png"  alt="브랜드관"></a></div>
-            <div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_market.png" alt="전통시장"></a></div>
-            <div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_kor.png" alt="한식"></a></div>
-            <div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_china.png" alt="중식"></a></div>
-            <div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_jpan.png" alt="일식"></a></div>
-            <div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_asian.png" alt="동양"></a></div>
-            <div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_night.png" alt="야식"></a></div>
-            <div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_past.png" alt="분식"></a></div>
-            <div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_chicken.png" alt="치킨"></a></div>
-            <div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_disert.png" alt="후식"></a></div>
-            <div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_leg.png" alt="족발"></a></div>
-            <div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_pizza.png" alt="피자"></a></div>
+        	<div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_brand.png"  alt="0"></a></div>
+            <div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_market.png" alt="1"></a></div>
+            <div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_kor.png" alt="2"></a></div>
+            <div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_china.png" alt="3"></a></div>
+            <div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_jpan.png" alt="4"></a></div>
+            <div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_asian.png" alt="5"></a></div>
+            <div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_night.png" alt="6"></a></div>
+            <div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_past.png" alt="7"></a></div>
+            <div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_chicken.png" alt="8"></a></div>
+            <div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_disert.png" alt="9"></a></div>
+            <div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_leg.png" alt="10"></a></div>
+            <div><a class="" href="${ pageContext.request.contextPath }/seller/menu_intro.jsp"><img id="food_category_name" name="food_category_name" class="category" src="${ pageContext.request.contextPath }/assets/img/cate_pizza.png" alt="11"></a></div>
         </div>
         <!-- 백상희 : 20240124 수정 끝 -->
         <!-- line -->
