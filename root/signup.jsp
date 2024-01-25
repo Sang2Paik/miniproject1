@@ -78,8 +78,9 @@
 										<div class="mb-3">
 											<input id="user_email" name="user_email" class="form-control"
 												type="email" placeholder="Email">
+											<div class="input_msg" id="user_email_msg"></div>
 										</div>
-										<div class="input_msg" id="user_email_msg"></div>
+										
 
 										<div class="mb-3">
 											<input id="user_addr" name="user_addr" class="form-control"
