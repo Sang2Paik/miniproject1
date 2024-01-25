@@ -9,6 +9,92 @@
 *{
 	font-family: 'Pretendard-Regular';
 }
+/********  menu_intro ************/
+
+ .product {
+  	box-shadow: 0px 0px 0px 7px #eee,
+ 				0px 0px 0px 8px #999;
+	border-radius: 10px;
+ }
+
+ .productsub {
+ 	
+ 	box-shadow: 0px 0px 0px 7px #b3d5ff,
+ 				0px 0px 0px 8px #999;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background-color: #b3d5ff;
+ }
+
+/*========== menu intro */
+
+
+
+
+.badge {
+  background-color: rgb(247, 189, 29);
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+
+
+
+/********  menu_detail ************/
+.page-title{
+	
+	font-size: 50px;
+	
+}
+
+
+.btn_cart{
+    background-color: #eeeeee;
+    color: #333;
+    width: 100px;
+    height: 50px;
+    font-size: 12px;
+    padding: 5px 0px;
+    border-bottom: 2px solid rgb(130, 203, 245);
+    border-radius: 12px;
+    margin: 5px;
+}
+
+.btn_cart:hover{
+    background-color: #98c8ff;
+    box-shadow: inset 0px 10px 5px 0px #6b99ce;
+    transition: 0.2s;
+}
+
+
+.btn_order{
+	color: #333;
+    background-color: #98c8ff;
+    width: 100px;
+    height: 50px;
+    font-size: 12px;
+    padding: 5px 0px;
+    border-bottom: 2px solid rgb(130, 203, 245);
+    border-radius: 12px;
+    margin: 5px;
+}
+
+.btn_order:hover{
+    background-color: #98c8ff;
+    box-shadow: inset 0px 10px 5px 0px #6b99ce;
+    transition: 0.2s;
+}
+
+/*========== menu detail */
+
+
+
+
+
+
 
 /* center */
 .c {
@@ -16,7 +102,7 @@
 }
 
 
-/* test check용 */
+
 .t{border: 1px solid red;}
 .top_margin{padding-top:0px;}
 
