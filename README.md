@@ -1,3 +1,8 @@
+최병훈 : 2024.01.25 PM 04:52 
+- seller / menu_intro.jsp 수정
+- seller / menu_detail.jsp 등록
+- assest/css/style.css 업데이트 필요
+
 최병훈 : 2024.01.25 PM 12:52 
 - member / login.jsp 수정
 - member / signup.jsp 수정
