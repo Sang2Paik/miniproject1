@@ -1,3 +1,7 @@
+최병훈 : 2024.01.26 PM 04:58 
+- seller.jsp - 가맹점 점포소개페이지
+- assest/css/style.css 업데이트 필요
+
 최병훈 : 2024.01.25 PM 04:52 
 - seller / menu_intro.jsp 수정
 - seller / menu_detail.jsp 등록
