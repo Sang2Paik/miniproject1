@@ -1,3 +1,5 @@
+/* 2024.0126 Update seller.jsp 항목추가*/ 
+
 /* 2024.0125 Update */
 @font-face {
     font-family: 'Pretendard-Regular';
@@ -9,7 +11,34 @@
 *{
 	font-family: 'Pretendard-Regular';
 }
+
+
+/********  Start - seller.jsp ************/
+
+
+.menu_icon{
+	width: 40px;
+}
+
+.pd10{
+	padding: 10px 0px;
+}
+
+
+
+/*========== End - seller.jsp */
+
+
+
+
 /********  menu_intro ************/
+
+shop_tt{
+	background-image: url("../img/shop.jpg");
+	background-repeat: no-repeat;
+	background-size: 1vw;
+}
+
 
  .product {
   	box-shadow: 0px 0px 0px 7px #eee,
@@ -26,7 +55,7 @@
 	background-color: #b3d5ff;
  }
 
-/*========== menu intro */
+
 
 
 
@@ -38,7 +67,7 @@
   text-align: center;
   border-radius: 5px;
 }
-
+/*========== menu intro */
 
 
 
