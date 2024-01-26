@@ -1,7 +1,14 @@
-최병훈 : 2024.01.26 PM 05:51
+최병훈 : 2024.01.26 PM 08:05
+- seller 폴더생성
 - seller_detail.jsp - 상점소개 페이지
+- seller_insert_form.jsp
 - seller_menu.jsp - 상점메뉴정보 페이지
-- assest/css/style.css 업데이트 필요
+- seller_menu_popup.jsp
+- seller_menu_reg_form.jsp
+- seller_menu_view.jsp
+- seller_modify_form.jsp
+- seller_page_original.jsp
+※ assest/css/style.css 업데이트 필요
 
 최병훈 : 2024.01.25 PM 04:52 
 - seller / menu_intro.jsp 수정
