@@ -1,6 +1,6 @@
 <!-- 최병훈 : 2024.01.26 pm04:55 -->
 
-<!-- seller_menu_view.jsp -->
+<!-- seller_insert_form.jsp -->
 <!-- 상점페이지 -->
 
 
