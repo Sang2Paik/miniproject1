@@ -1,5 +1,5 @@
-최병훈 : 2024.01.26 PM 04:58 
-- seller.jsp - 상점소개 페이지
+최병훈 : 2024.01.26 PM 05:51
+- seller_detail.jsp - 상점소개 페이지
 - seller_menu.jsp - 상점메뉴정보 페이지
 - assest/css/style.css 업데이트 필요
 
