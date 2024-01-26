@@ -1,4 +1,4 @@
-<!-- 최병훈 : 2024.01.26 pm04:55 -->
+<!-- 최병훈 : 2024.01.26 pm05:50 -->
 
 <!-- seller.jsp -->
 <!-- 가맹점 점포 소개페이지 -->
@@ -20,6 +20,7 @@
     
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/assets/css/itemDetail.css">
     <link rel="stylesheet" type="text/css" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     
     <style type="text/css">
 	
@@ -35,6 +36,15 @@
     </style>
 
 
+<script type="text/javascript">
+
+	function del() {
+		if(confirm('정말 삭제하시겠습니까?')==false) return;
+		//삭제
+		location.href='seller_delete.do?seller_idx='+${ vo.seller_idx } //SellerDeleteAction
+	}
+
+</script>
    
 
 			<!-- Contents -->
@@ -48,7 +58,7 @@
                     <article class="col-md-9 article affix-purchase-target">
                         <div class="content-inner" role="toolbar">
                             <div class="page-header">
-                                <h1 class="page-title"> 착한식당
+                                <h1 class="page-title"> ${vo.seller_name} 상세정보
                                     <small>신선한 재료만 사용합니다</small>
                                 </h1>
                             </div><!-- .page-header -->
@@ -58,7 +68,7 @@
 
                                 <!-- 메뉴 소개 -->
                                 <div role="tabpanel" class="tab-pane active" id="description">
-                                    <p><img src="${pageContext.request.contextPath}/assets/img/shop.jpg" alt="점포사진"><br></p>
+                                    <p><img id="seller_photo" src="${ pageContext.request.contextPath }/upload/${ vo.seller_photo }"></p>
                                     
                                     <div class="delivery-info block">
                                         <div class="content">
@@ -283,39 +293,52 @@
 
                                         <div class="block">
                                             <h4 name="" class="pd10">상점이름<br></h4>
-											<h4 name="" class="text_left">착한식당</h4>
+											<h4 name="" class="text_left">${vo.seller_name} </h4>
                                         </div>
 
                                         <div class="block">
                                             <h4 name="" class="pd10">주소<br></h4>
-                                            <h4 name="" class="text_left">서울시 서초구 서초대로 77길 41</h4>
-                                        </div><!-- /.item-selection -->
+                                            <h4 name="" class="text_left">${vo.seller_addr}</h4>
+                                        </div>
 
                                         <div class="block">
-                                            <h4 name="" class="pd10">영업 시간<br></h4>
-                                            <h4 name="" class="text_left">10:00 ~ 22:00</h4>
-                                        </div><!-- /.item-selection -->
+                                            <h4 name="" class="pd10">전화번호<br></h4>
+                                            <h4 name="" class="text_left">${vo.seller_phone}</h4>
+                                        </div>
+
+                                        <div class="block">
+                                            <h4 name="" class="pd10">포장/배달여부<br></h4>
+                                            <h4 name="" class="text_left">${vo.delivery_type}</h4>
+                                        </div>
+
+                                        <div class="block">
+                                            <h4 name="" class="pd10">소개<br></h4>
+                                            <h4 name="" class="text_left">${vo.seller_intro}</h4>
+                                        </div>
+
+                                        <div class="block">
+                                            <h4 name="" class="pd10">최소주문금액<br></h4>
+                                            <h4 name="" class="text_left">${vo.seller_min_order_price}</h4>
+                                        </div>
+
+                                        <div class="block">
+                                            <h4 name="" class="pd10">운영시간<br></h4>
+                                            <h4 name="" class="text_left">${vo.seller_operation_hours}</h4>
+                                        </div>
 
                                         <div class="block">
                                             <h4 name="" class="pd10">휴무일<br></h4>
-                                            <h4 name="" class="text_left">연중무휴</h4>
+                                            <h4 name="" class="text_left">${vo.seller_close_days}</h4>
                                         </div>
 
                                         <div class="block">
                                             <h4 name="" class="pd10">상태<br></h4>
-                                            <h4 name="" class="text_left">영업중</h4>
+                                            <h4 name="" class="text_left">${vo.seller_status}</h4>
                                         </div>
                                         
                                         <div class="block">
                                             <h4 name="" class="pd10">음식카테고리<br></h4>
-                                            <h4 name="" class="text_left">
-                                                <img id="menu_photo" class="menu_icon" 
-                                                name="menu_photo" src="${pageContext.request.contextPath}/assets/img/cate_asian.png" alt="동양음식">
-												<img id="menu_photo" class="menu_icon" 
-												name="menu_photo" src="${pageContext.request.contextPath}/assets/img/cate_jpan.png" alt="일식"> 
-												<img id="menu_photo" class="menu_icon" 
-												name="menu_photo" src="${pageContext.request.contextPath}/assets/img/cate_kor.png" alt="한식"> 
-                                            </h4>
+                                            <h4 name="" class="text_left">${vo.food_category_name}</h4>
                                         </div>
 
                                         <div class="block">
@@ -325,9 +348,10 @@
 
                                         
                                     </div><!-- /.total-price-box -->
+									<input type="button" value="메뉴보기" class="btn wid100 btn_cart" onclick="location.href='seller_menu_view.do?seller_idx='+${ vo.seller_idx }">
+									<input type="button" value="상점수정" class="btn wid100 btn_cart" onclick="location.href='seller_modify_form.do?seller_idx='+${ vo.seller_idx }">
+									<input type="button" value="상점삭제" class="btn wid100 btn_order" onclick="del();">
 
-                                    <div><button class="btn wid100 btn_cart">상점등록</button></div>
-                                    <div><button class="btn wid100 btn_order">쿠폰등록</button></div>
                                     
 
 
