@@ -1,4 +1,5 @@
 <!-- 최병훈2024.01.26  -->
+<!-- 이영준2024.01.29 --> 
 <!-- seller_menu_view.jsp -->
 <!-- 상점 메뉴 페이지 -->
 
@@ -29,6 +30,7 @@
 	let g_menu_idx;       //수정/삭제할 menu_idx
 	let g_seller_idx;     
 	let g_menu_photo;     //menu 파일명
+
 	
 	function show_detail(menu_idx) {
 	
@@ -46,6 +48,8 @@
 				g_menu_idx 	 = res_data.menu_idx ;
 				g_seller_idx = res_data.seller_idx
 				g_menu_photo = res_data.menu_photo ;
+				let created_date = res_data.menu_created_date.substr(0,10);
+				let modified_date = res_data.menu_modified_date.substr(0,10);
 				
 				//alert(g_menu_photo);
 				//팝업창에 띄우기
@@ -60,8 +64,8 @@
 				$("#popup_menu_category_name").html("<b>카테고리: </b>" +res_data.menu_category_name);
 				$("#popup_menu_price").html("<b>가격: </b>" +res_data.menu_price);
 				$("#popup_menu_detail").html("<b>메뉴소개: </b>" +res_data.menu_detail);
-				$("#popup_menu_created_date").html("<b>생성날짜: </b>" + res_data.menu_created_date);
-				$("#popup_menu_modified_date").html("<b>수정날짜: </b>" +res_data.menu_modified_date);
+				$("#popup_menu_created_date").html("<b>생성날짜: </b>" + created_date);
+				$("#popup_menu_modified_date").html("<b>수정날짜: </b>" + modified_date);
 				$("#popup_menu_rating_avg").html("<b>평점: </b>" +res_data.menu_rating_avg);
 				$("#popup_menu_status").html("<b>상태: </b>" +res_data.menu_status);
 				
@@ -166,10 +170,10 @@
 		<!-- 등록된 메뉴가 없으면 -->
 		<c:if test="${ empty menu_list }">
 			<div class="blank_msg">
-				등록된 메뉴가 없습니다.
-				등록된 메뉴 보여주기
+				<p style="color: red">등록된 메뉴가 없습니다.</p>
 			</div>
 		</c:if>
+		<c:if test="${ !empty menu_list }">
 		<table class="table table-striped">
 		    <tbody>
 			<tr>
@@ -203,6 +207,7 @@
 			</c:forEach>
 			</tbody>
 		</table>
+		</c:if>
 	<br>
 	
 	<input type="button" class="btn btn_cart"  value="메뉴등록" onclick="location.href='menu_reg_form.do?seller_idx=${ seller_vo.seller_idx }'">
