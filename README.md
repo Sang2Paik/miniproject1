@@ -1,3 +1,31 @@
+최병훈 : 2024.01.29 PM 03:49 업데이트 목록
+
+- admin 폴더생성
+- admin_page.jsp
+- admin_coupon_modify_ajax.jsp
+- admin_coupon_update_form.jsp
+- admin_user_form_ajax.jsp
+- user_update_form.jsp
+
+- member 폴더생성
+- login.jsp
+- modify_form.jsp
+- mypage.jsp
+- signup.jsp
+
+- 최상위 수정파일
+- header.jsp
+- index.jsp
+- navi.jsp
+- navi_sm.jsp
+
+- assets 폴더생성
+- assets에 해당되는 수정파일포함 zip으로 압축해서 올려놨어요
+- 
+
+
+  
+
 최병훈 : 2024.01.26 PM 08:05
 - seller 폴더생성
 - seller_detail.jsp - 상점소개 페이지
