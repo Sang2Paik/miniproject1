@@ -1,3 +1,18 @@
+최병훈 : 2024.01.29 PM 18:10 업데이트 목록
+
+---- seller 폴더
+- seller_detail.jsp
+- seller_insert_form.jsp
+- seller_menu.jsp
+- seller_menu_fe.jsp
+- seller_menu_modify_form.jsp
+- seller_menu_popup.jsp
+- seller_menu_reg_form.jsp
+- seller_menu_view.jsp
+- seller_modify_form.jsp
+- seller_page.jsp
+  
+
 최병훈 : 2024.01.29 PM 03:49 업데이트 목록
 = 오늘 오전 요청파일 =
 
