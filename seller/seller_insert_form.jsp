@@ -1,16 +1,15 @@
 <!-- 최병훈 : 2024.01.26 pm04:55 -->
+<!-- 이영준 : 2024.01.29 am 10:30  -->
 
 <!-- seller_insert_form.jsp -->
-<!-- 상점페이지 -->
+<!-- 판매자 상점 등록 페이지 -->
 
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 
 <!--  JSTL LIBRALY 사용 설정 -->
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
-
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
 
     
 	<!-- Header -->
@@ -24,8 +23,14 @@
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+<!-- 20240127 백상희 추가 -->
+<!-- 주소검색 API (다음제공) -->
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
 
 <script type="text/javascript">
+
+	const regular_num = /^[0-9]{1,}$/;  /* 1,하면 무한대, max가 없음 */
 	function send(f){
 			
 			let seller_name = $("#seller_name").val();
@@ -77,12 +82,13 @@
 				f.seller_intro.focus();
 				return;
 			}
-			if(seller_min_order_price==''){
-				alert('최소주문금액을 입력하세요');
-				f.seller_min_order_price.value='';
-				f.seller_min_order_price.focus();
-				return;
-			}
+			// 정규식 이용 : 숫자체크
+		 	if(regular_num.test(seller_min_order_price)==false){
+				alert("최소주문금액은 숫자로 입력하세요");	
+			    f.seller_min_order_price.value="";  //값지우기
+			    f.seller_min_order_price.focus();   //포커스 넣기
+				return; 
+		 	}
 			if(delivery_type==''){
 				alert('배달/포장가능 여부를 입력하세요');
 				f.delivery_type.value='';
@@ -109,6 +115,27 @@
 			
 
 	}
+	
+	function find_addr() {
+		
+		//Daum API 주소 받아서 넣는 방법
+	    new daum.Postcode({
+	        oncomplete: function(data) {
+	        	
+	        	//data = {"address", "경기 성남시 분당구 판교역로 166"...}
+	        	//alert(data.address);
+	        	$("#seller_addr").val(data.address);
+  	
+	        }
+	    }).open();
+		
+	    
+		
+			
+	}//end:find_addr()
+	
+	
+	
 </script>
 
 
@@ -192,9 +219,9 @@
 				</td>
 			</tr>
 			<tr>
-				<th>소개: </th>
+				<th>가게 소개글: </th>
 				<td>
-					<input name="seller_intro" id="seller_intro" class="form-control select selectShippingArrivalDate">
+					<textarea name="seller_intro" cols="30" rows="5" style="resize:none;" id="seller_intro" class="form-control select selectShippingArrivalDate"></textarea>
 				</td>
 			</tr>
 			<tr>
@@ -212,7 +239,7 @@
 			<tr>
 				<th>휴무일</th>
 				<td>
-					<input name="seller_close_days" id="seller_close_days" class="form-control select selectShippingArrivalDate">
+					<input name="seller_close_days" id="seller_close_days" class="form-control select selectShippingArrivalDate" placeholder="요일을 입력하세요">
 				</td>
 			</tr>
 			<tr>
@@ -251,37 +278,13 @@
 										    </tbody>
 										  </table>
 
-<div><input  type="button" class="btn wid100 btn_cart" onclick="send(this.form)" value="상점등록"></div>
+<div>
+	<input  type="button" class="btn wid100 btn_cart" onclick="send(this.form)" value="상점등록">
+	<input  type="button" class="btn wid100 btn_cart" id="btn_seller_insert" type="button" onclick="location.href='seller_page.do?user_idx=${user.user_idx}'" value="상점목록보기">
+</div>
 
 	</form>
-	<hr>
-	<div id="disp">
-<%-- 		<table>
-			<tr>
-				<th>상점이름: </th>
-				<th>주소: </th> 
-				<th>배달/포장: </th>
-				<th>소개: </th>
-				<th>최소주문금액: </th>
-				<th>쿠폰만료기간: </th>
-			</tr>
-			<c:forEach var="vo" items="${list}" varStatus="i">
-				<tr>
-					<td>${ count.i }</td>
-					<td>${vo.coupon_idx}</td>
-					<td>${vo.coupon_name}</td>
-					<td>${vo.coupon_content}</td>			
-					<td>${vo.deducted_price}</td>			
-					<td>${vo.coupon_min_order_price}</td>			
-					<td>${vo.coupon_expired_date}</td>			
-				</tr>		
-			</c:forEach>
-		
-		</table> --%>
-		
-	
-	
-	</div>
+
 
 
 

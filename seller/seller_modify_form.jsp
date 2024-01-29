@@ -1,7 +1,8 @@
 <!-- 최병훈 : 2024.01.26 pm04:55 -->
+<!-- 이영준 : 2024.01.29.11:30 -->
 
 <!-- seller_modify_form.jsp -->
-<!-- 상점페이지 -->
+<!-- 상점 수정 페이지 -->
 
 
 
@@ -28,11 +29,14 @@
 
 	function send(f) {
 		
+		const regular_num = /^[0-9]{1,}$/;  /* 1,하면 무한대, max가 없음 */
+		
 		// 입력사항체크(제목/내용/사진)
 		// 변수는 html 상 받아오는 정보 (name으로 받아오는 parameter)
 		let seller_name  = f.seller_name.value;
 		let seller_addr  = f.seller_addr.value;
 		let seller_phone  = f.seller_phone.value;
+		let seller_min_order_price  = f.seller_min_order_price.value;
 		let seller_operation_hours  = f.seller_operation_hours.value;
 		let seller_close_days  = f.seller_close_days.value;
 
@@ -55,6 +59,13 @@
 			f.seller_phone.focus();
 			return;
 		}
+		// 정규식 이용 : 숫자체크
+	 	if(regular_num.test(seller_min_order_price)==false){
+			alert("최소주문금액은 숫자로 입력하세요");	
+		    f.seller_min_order_price.value="";  //값지우기
+		    f.seller_min_order_price.focus();   //포커스 넣기
+			return; 
+	 	}
 
 		if(seller_operation_hours==''){
 			alert('영업시간을 입력하세요');
@@ -176,8 +187,8 @@
               		
 <!-- 내용수정용 폼 -->
 <form>
-	<input type="hidden" name="seller_idx" value="${ seller_vo.seller_idx }">	
-	<input type="hidden" name="user_idx" value="${ user.user_idx }">										
+	<input type="hidden" class="btn wid30 btn_cart" name="seller_idx" value="${ seller_vo.seller_idx }">	
+	<input type="hidden" class="btn wid30 btn_cart" name="user_idx" value="${ user.user_idx }">										
 										
 										
 										
@@ -197,7 +208,7 @@
 					<img id="my_img" src="../upload/${ seller_vo.seller_photo }">
       	  				<br>
       	  				<br>
-      	  				<input class="btn wid100 btn_cart" type="button" value="이미지수정" onclick="ajaxFileUpload();">
+      	  				<input class="btn_e wid40 btn_cart" type="button" value="이미지수정" onclick="ajaxFileUpload();">
 				</td>
 			</tr>
 			<tr>
@@ -267,6 +278,14 @@
 					</select>
 				</td>
 			</tr>
+			<tr>
+   	  			<td colspan="2" align="center">
+   	  				<input class="btn_e wid40 btn_cart" type="button" value="수정하기" 
+   	  				       onclick="send(this.form);">
+   	  				<input class="btn_e wid40 btn_cart" type="button" value="상점목록보기" 
+   	  				       onclick="location.href='seller_page.do?user_idx=${user.user_idx}'">
+   	  			</td>
+     	  	</tr>
 	
 										    </tbody>
 										  </table>

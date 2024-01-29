@@ -1,5 +1,6 @@
 <!-- 최병훈2024.01.26  -->
 <!-- seller_menu_view.jsp -->
+<!-- 상점 메뉴 페이지 -->
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -19,6 +20,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/assets/css/itemDetail.css">
+<link rel="stylesheet" type="text/css" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
 
 <script type="text/javascript">
 
@@ -44,16 +47,20 @@
 				g_seller_idx = res_data.seller_idx
 				g_menu_photo = res_data.menu_photo ;
 				
+				//alert(g_menu_photo);
 				//팝업창에 띄우기
 				//팝업창 (Modal)
-				$("#myModal").modal({backdrop: "static"});   //jquery $, backdro static : 모달 밖의 창 눌러도 안닫힘
+				//$("#myModal").modal({backdrop: "static"});   //jquery $, backdro static : 모달 밖의 창 눌러도 안닫힘
+				//$("#myModal").modal();
+				$("#btn_modal").click();
+				
 		
 				
 				$("#popup_menu_name").html(res_data.menu_name);
 				$("#popup_menu_category_name").html("<b>카테고리: </b>" +res_data.menu_category_name);
 				$("#popup_menu_price").html("<b>가격: </b>" +res_data.menu_price);
 				$("#popup_menu_detail").html("<b>메뉴소개: </b>" +res_data.menu_detail);
-				$("#popup_menu_created_date").html("<b>생성날짜: </b>" +res_data.menu_created_date);
+				$("#popup_menu_created_date").html("<b>생성날짜: </b>" + res_data.menu_created_date);
 				$("#popup_menu_modified_date").html("<b>수정날짜: </b>" +res_data.menu_modified_date);
 				$("#popup_menu_rating_avg").html("<b>평점: </b>" +res_data.menu_rating_avg);
 				$("#popup_menu_status").html("<b>상태: </b>" +res_data.menu_status);
@@ -84,24 +91,87 @@
 		width: 100px;
 		height: 100px;
 	}
+	.t{
+		border: 1px solid red;}
+	
+	.wid50{
+		width: 50%;
+	}
+	
+	.wid30{
+		width: 40%;
+	}
+	
+	.blank_msg{color:#333; 
+	background-color: #eee; 
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	}
+	
+	.tpd{
+	padding: 5px;
+	}
+	
+	.btnbg{
+	background-color: #fff;}
+	
 </style>
 
 </head>
 <body>
 
+
+
+<!-- Header -->
+<%@ include file="/header.jsp" %>
+<!-- Navi -->
+<%@ include file="/navi_sm.jsp" %>
+
 <%@include file="seller_menu_popup.jsp" %>
+
+
+
+			<!-- Contents -->
+        <div class="container pt-4 pt-xl-5 c">
+	
+	        <main id="content">
+            <div class="container">
+                <div class="row shop_tt">
+
+
+                    <article class="col-md-12 article affix-purchase-target">
+                        <div class="content-inner" role="toolbar">
+                        
+                        
+          
+                        
+                            <div class="page-header">
+                                <h1 class="page-title"> '${ seller_vo.seller_name }'의 메뉴목록</h1>
+                            </div><!-- .page-header -->
+
+                            <!--.page-body -->
+                            <div class="tab-content">
+	
+	
+                                    <div class="delivery-info block">
+										<div class="container mt-3">
+
+
+
+
 
 <div>
 	<div>
-	 <h2>'${ seller_vo.seller_name }'의 Menu</h2>
+<%-- 	 <h2>'${ seller_vo.seller_name }'의 Menu</h2> --%>
 		<!-- 등록된 메뉴가 없으면 -->
 		<c:if test="${ empty menu_list }">
-			<div style="color:red; ">
+			<div class="blank_msg">
 				등록된 메뉴가 없습니다.
 				등록된 메뉴 보여주기
 			</div>
 		</c:if>
-		<table>
+		<table class="table table-striped">
+		    <tbody>
 			<tr>
 				<th>번호</th>
 				<th>메뉴이름</th>
@@ -123,23 +193,37 @@
 				</td>
 				<td>${vo.menu_price}</td>
 
-				<th colspan="1">
+				<td>
 					 <!-- 메뉴 수정 메뉴 팝업창에서 처리 예정-->
-		            <input type="button" value="메뉴상세" onclick="show_detail('${ vo.menu_idx }');">
+		            <input type="button" class="btn btn-primary"  class="btn wid30 btn_cart"
+		                   value="메뉴상세" onclick="show_detail('${ vo.menu_idx }');">
 		            
-	            </th>
+	            </td>
 			</tr>
 			</c:forEach>
+			</tbody>
 		</table>
 	<br>
-	 <input type="button" value="메뉴등록" onclick="location.href='menu_reg_form.do?seller_idx=${ seller_vo.seller_idx }'">
-	 
+	
+	<input type="button" class="btn btn_cart"  value="메뉴등록" onclick="location.href='menu_reg_form.do?seller_idx=${ seller_vo.seller_idx }'">
+	<input type="button" class="btn btn_cart"  value="상점목록보기" onclick="location.href='seller_page.do?user_idx=${user.user_idx}'">
 	
 	</div>
-	<hr>
-
-
 </div>
+                                    </div>
+                                  </div>
+                                
+                                
+                            </div>
+                        	<!-- End // .page-body -->
+                        </div>
+                    </article>
+
+
+				</div>
+			</div>
+		</main>
+	</div>
 
 </body>
 </html>

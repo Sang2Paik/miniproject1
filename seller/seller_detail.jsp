@@ -1,4 +1,5 @@
 <!-- 최병훈 : 2024.01.26 pm05:50 -->
+<!-- 이영준 : 2024.01.29 am 10:50 -->
 
 <!-- seller.jsp -->
 <!-- 가맹점 점포 소개페이지 -->
@@ -39,9 +40,13 @@
 <script type="text/javascript">
 
 	function del() {
+		
+		var seller_idx = ${vo.seller_idx};
+		var user_idx = ${user.user_idx};
+		
 		if(confirm('정말 삭제하시겠습니까?')==false) return;
 		//삭제
-		location.href='seller_delete.do?seller_idx='+${ vo.seller_idx } //SellerDeleteAction
+		location.href='seller_delete.do?seller_idx=' + seller_idx + '&user_idx=' + user_idx;  //SellerDeleteAction
 	}
 
 </script>
@@ -295,6 +300,11 @@
                                             <h4 name="" class="pd10">상점이름<br></h4>
 											<h4 name="" class="text_left">${vo.seller_name} </h4>
                                         </div>
+                                        
+                                        <div class="block">
+                                            <h4 name="" class="pd10">음식카테고리<br></h4>
+                                            <h4 name="" class="text_left">${vo.food_category_name}</h4>
+                                        </div>
 
                                         <div class="block">
                                             <h4 name="" class="pd10">주소<br></h4>
@@ -334,11 +344,6 @@
                                         <div class="block">
                                             <h4 name="" class="pd10">상태<br></h4>
                                             <h4 name="" class="text_left">${vo.seller_status}</h4>
-                                        </div>
-                                        
-                                        <div class="block">
-                                            <h4 name="" class="pd10">음식카테고리<br></h4>
-                                            <h4 name="" class="text_left">${vo.food_category_name}</h4>
                                         </div>
 
                                         <div class="block">

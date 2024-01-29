@@ -1,7 +1,8 @@
 <!-- 최병훈 : 2024.01.26 pm07:55 -->
+<!-- 이영준 : 2024.01.29 am11:30 -->
 
 <!-- seller_menu_reg_form.jsp -->
-<!-- 상점페이지 -->
+<!-- 상점 메뉴 수정 페이지 -->
 
 
 
@@ -27,6 +28,8 @@
 
 <script type="text/javascript">
 
+	const regular_num = /^[0-9]{1,}$/;  /* 1,하면 무한대, max가 없음 */
+
 	function send(f) {
 		
 		//입력사항체크(제목/내용/사진)
@@ -49,12 +52,13 @@
 			f.menu_category.focus();
 			return;
 		}
-		if(menu_price==''){
-			alert('가격을 입력하세요');
-			f.menu_price.value='';
-			f.menu_price.focus();
-			return;
-		}
+		// 정규식 이용 : 숫자체크
+	 	if(regular_num.test(menu_price)==false){
+			alert("최소주문금액은 숫자로 입력하세요");	
+		    f.menu_price.value="";  //값지우기
+		    f.menu_price.focus();   //포커스 넣기
+			return; 
+	 	}
 		
 		f.action = 'menu_reg.do'; //SellerMenuRegAction
 		f.submit();
@@ -110,13 +114,7 @@
 										<div class="container mt-3">
 										
 										
-								<form id="ajaxForm" method="POST" enctype="multipart/form-data">
-										<input type="hidden" name="user_idx" value="${ user.user_idx }"> 
-																		
-										
-										
-										
-										
+							
 										
 										  <table class="table table-striped">
 
@@ -131,11 +129,11 @@
 				<th>메뉴카테고리 </th>
 				<td>
 					<select class="form-control" name=menu_category id="menu_category" class="form-control select selectShippingArrivalDate">
-							<c:forEach var="vo" items='${ menu_category_list }' varStatus="i">
-								<!-- value가 넘어감 -->
-								<option value="${ vo.menu_category_idx }/${ vo.menu_category_name }">${ vo.menu_category_name }</option>
-							</c:forEach>	
-						</select>
+						<c:forEach var="vo" items='${ menu_category_list }' varStatus="i">
+							<!-- value가 넘어감 -->
+							<option value="${ vo.menu_category_idx }/${ vo.menu_category_name }">${ vo.menu_category_name }</option>
+						</c:forEach>	
+					</select>
 				</td>
 			</tr>
 			<tr>
@@ -154,72 +152,34 @@
 			<tr>
 				<th>사진 </th>
 				<td>
-					<input type="file"  name="menu_photo" class="form-control select selectShippingArrivalDate"></textarea>
+					<input type="file"  name="menu_photo" class="form-control select selectShippingArrivalDate">
 				</td>
 			</tr>
+			<tr>
+      	  			<td colspan="2" align="center">
+      	  				<input type="button" class="btn wid30 btn_cart"  type="button" value="등록하기" 
+      	  				       onclick="send(this.form);">
+      	  				<input type="button" class="btn wid30 btn_cart"  type="button" value="상점목록보기" 
+      	  				       onclick="location.href='seller_page.do?user_idx=${user.user_idx}'">
+      	  			</td>
+      	  		</tr>
 	
 										   
 										  </table>
-
-
-
-	</form>
-	<hr>
-	<div id="disp">
-<%-- 		<table>
-			<tr>
-				<th>상점이름: </th>
-				<th>주소: </th> 
-				<th>배달/포장: </th>
-				<th>소개: </th>
-				<th>최소주문금액: </th>
-				<th>쿠폰만료기간: </th>
-			</tr>
-			<c:forEach var="vo" items="${list}" varStatus="i">
-				<tr>
-					<td>${ count.i }</td>
-					<td>${vo.coupon_idx}</td>
-					<td>${vo.coupon_name}</td>
-					<td>${vo.coupon_content}</td>			
-					<td>${vo.deducted_price}</td>			
-					<td>${vo.coupon_min_order_price}</td>			
-					<td>${vo.coupon_expired_date}</td>			
-				</tr>		
-			</c:forEach>
-		
-		</table> --%>
-		
-	
-	
-	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-										</div>
-                                    </div>
-                                
-                                
-                            </div>
+										  
+										  
+										  
+										  
+									</div>
+								</div>
+							</div>
                         	<!-- End // .page-body -->
+
+						</form>
+
                         </div>
+                        
                     </article>
-
-
-
-
-
-
 
 
 

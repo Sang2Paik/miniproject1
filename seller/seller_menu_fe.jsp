@@ -15,7 +15,7 @@
 	<!-- Header -->
 	<%@ include file="/header.jsp" %>
 	<!-- Navi -->
-<%-- 	<%@ include file="/navi_sm.jsp" --%> %>
+	<%@ include file="/navi_sm.jsp" %>
 
     
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/assets/css/itemDetail.css">
