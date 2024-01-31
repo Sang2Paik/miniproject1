@@ -8,7 +8,7 @@
 - seller / seller_menu_view.jsp
 - seller / seller_detail.jsp
 변경해주세요~~
-
+ 
 
 
 
