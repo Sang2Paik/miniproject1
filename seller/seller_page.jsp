@@ -62,7 +62,7 @@
           
                         
                             <div class="seller_list page-header">
-                                <h1 class="seller_list page-title"> 상점목록</h1>
+                                <h1 class="seller_list page-title"><i class="f210 cmain">상점목록</i></h1>
                             </div><!-- .page-header -->
 
                             <!--.page-body -->

@@ -168,7 +168,7 @@
                     <article class="col-md-12 article affix-purchase-target">
                         <div class="content-inner" role="toolbar">
                             <div class="seller_reg page-header">
-                                <h1 class="page-title"> 상점등록</h1>
+                                <h1 class="page-title"><i class="f210 cmain">상점등록</i></h1>
                             </div><!-- .page-header -->
 
                             <!--.page-body -->
