@@ -16,7 +16,7 @@
     <!-- Bootstrap 5.3.2 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+  
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/Navbar-Centered-Brand-icons.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/style.css">
     
@@ -27,5 +27,10 @@
     <script src='https://unpkg.com/feather-icons'></script>
     <script id="rendered-js" >  feather.replace(); </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    <!-- Font 210Supersize -->
+    <script src="${pageContext.request.contextPath}/assets/js/font210.js"></script>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/font210.css">
+    
 
 </head>
