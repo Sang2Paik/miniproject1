@@ -7,6 +7,7 @@
 - seller / seller_page.jsp
 - seller / seller_menu_view.jsp
 - seller / seller_detail.jsp
+- seller / seller_insert_form.jsp
 변경해주세요~~
  
 
