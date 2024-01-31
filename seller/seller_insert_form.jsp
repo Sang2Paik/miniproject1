@@ -150,6 +150,7 @@
 		font-size: 12px;
 		margin: 10px 0px;
 		}
+
 	
     </style>
 
@@ -166,12 +167,12 @@
 
                     <article class="col-md-12 article affix-purchase-target">
                         <div class="content-inner" role="toolbar">
-                            <div class="page-header">
+                            <div class="seller_reg page-header">
                                 <h1 class="page-title"> 상점등록</h1>
                             </div><!-- .page-header -->
 
                             <!--.page-body -->
-                            <div class="tab-content">
+                            <!-- <div class="tab-content"> -->
 	
 	
                                     <div class="delivery-info block">
@@ -199,6 +200,7 @@
 				<th>주소: </th>
 				<td>
 					<input name="seller_addr" id="seller_addr" class="form-control select selectShippingArrivalDate">
+					<input class="form-control select selectShippingArrivalDate" type="button" value="주소검색" id="btn_find_addr" onclick="find_addr();">
 				</td>
 			</tr>
 			<tr>
@@ -260,7 +262,7 @@
 			<tr>
 				<th>음식카테고리</th>
 				<td>
-	    	  		<select name="food_category" id="food_category">
+	    	  		<select name="food_category" id="food_category" class="form-control select selectShippingArrivalDate">
 						<c:forEach var="vo" items='${ food_category_list }' varStatus="i">
 							<!-- value가 넘어감 -->
 							<option value="${ vo.food_category_idx }/${ vo.food_category_name }">${ vo.food_category_name }</option>
@@ -300,7 +302,7 @@
 
 
 										</div>
-                                    </div>
+                                    <!-- </div> -->
                                 
                                 
                             </div>

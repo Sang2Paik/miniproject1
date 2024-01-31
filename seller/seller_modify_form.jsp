@@ -170,7 +170,7 @@
                             </div><!-- .page-header -->
 
                             <!--.page-body -->
-                            <div class="tab-content">
+                            <!-- <div class="tab-content"> -->
 	
 	
                                     <div class="delivery-info block">
@@ -297,8 +297,7 @@
 
 
 <div class="purchase-option-inner">
-						<div><input type="button" class="btn wid40 btn_cart" value="등록하기" onclick="send(this.form);">
-						<input type="button" class="btn wid40 btn_cart" value="메인페이지" onclick="location.href='../index.jsp'"></div>
+						<input type="button" class="btn wid40 btn_cart" value="메인페이지" onclick="location.href='../main.do'"></div>
                 	</div>
 
 
@@ -311,7 +310,7 @@
 
 
 										</div>
-                                    </div>
+                                   <!--  </div> -->
                                 
                                 
                             </div>

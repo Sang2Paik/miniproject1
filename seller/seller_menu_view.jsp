@@ -1,5 +1,4 @@
 <!-- 최병훈2024.01.26  -->
-<!-- 이영준2024.01.29 --> 
 <!-- seller_menu_view.jsp -->
 <!-- 상점 메뉴 페이지 -->
 
@@ -84,7 +83,7 @@
 		
 		//로그아웃 처리 필요
 		alert('로그아웃처리 필요!')
-		location.href="../index.jsp";  
+		location.href="../main.do";  
 	}
 
 </script>
@@ -119,6 +118,11 @@
 	.btnbg{
 	background-color: #fff;}
 	
+	.menu_list {
+	font-size: 40px;
+	font-weight: bold;
+	}
+	
 </style>
 
 </head>
@@ -149,12 +153,12 @@
                         
           
                         
-                            <div class="page-header">
-                                <h1 class="page-title"> '${ seller_vo.seller_name }'의 메뉴목록</h1>
+                            <div class="menu_list page-header">
+                                <h1 class="page-title"><i class="f210 cmain"> '${ seller_vo.seller_name }'</i><i class="f210 f30 csilver"> menu</i></h1>
                             </div><!-- .page-header -->
 
                             <!--.page-body -->
-                            <div class="tab-content">
+                            <!-- <div class="tab-content"> -->
 	
 	
                                     <div class="delivery-info block">
@@ -174,7 +178,7 @@
 			</div>
 		</c:if>
 		<c:if test="${ !empty menu_list }">
-		<table class="table table-striped">
+		<table id="menu_table" class="table menu_table table-striped">
 		    <tbody>
 			<tr>
 				<th>번호</th>
@@ -199,7 +203,7 @@
 
 				<td>
 					 <!-- 메뉴 수정 메뉴 팝업창에서 처리 예정-->
-		            <input type="button" class="btn btn-primary"  class="btn wid30 btn_cart"
+		            <input type="button" class="btn btn_menu"
 		                   value="메뉴상세" onclick="show_detail('${ vo.menu_idx }');">
 		            
 	            </td>
@@ -210,13 +214,13 @@
 		</c:if>
 	<br>
 	
-	<input type="button" class="btn btn_cart"  value="메뉴등록" onclick="location.href='menu_reg_form.do?seller_idx=${ seller_vo.seller_idx }'">
-	<input type="button" class="btn btn_cart"  value="상점목록보기" onclick="location.href='seller_page.do?user_idx=${user.user_idx}'">
+	<input type="button" class="btn btn_cart wid40"  value="메뉴등록" onclick="location.href='menu_reg_form.do?seller_idx=${ seller_vo.seller_idx }'">
+	<input type="button" class="btn btn_cart wid40"  value="상점목록보기" onclick="location.href='seller_page.do?user_idx=${user.user_idx}'">
 	
 	</div>
 </div>
                                     </div>
-                                  </div>
+                                 <!--  </div> -->
                                 
                                 
                             </div>

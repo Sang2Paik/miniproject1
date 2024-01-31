@@ -107,7 +107,7 @@
                             </div><!-- .page-header -->
 
                             <!--.page-body -->
-                            <div class="tab-content">
+                            <!-- <div class="tab-content"> -->
 	
 	
                                     <div class="delivery-info block">
@@ -170,7 +170,7 @@
 										  
 										  
 										  
-									</div>
+									<!-- </div> -->
 								</div>
 							</div>
                         	<!-- End // .page-body -->

@@ -37,7 +37,11 @@
 		font-size: 12px;
 		margin: 10px 0px;
 		}
-	
+		#seller_photo{
+		width: 100px;
+		height: 100px;
+		}
+
     </style>
 
 
@@ -57,12 +61,12 @@
                         
           
                         
-                            <div class="page-header">
-                                <h1 class="page-title"> 상점목록</h1>
+                            <div class="seller_list page-header">
+                                <h1 class="seller_list page-title"> 상점목록</h1>
                             </div><!-- .page-header -->
 
                             <!--.page-body -->
-                            <div class="tab-content">
+                            <!-- <div class="tab-content"> -->
 	
 	
                                     <div class="delivery-info block">
@@ -75,7 +79,7 @@
 										
 										
 										
-										  <table class="table table-striped">
+										  <table class="table menu_table table-striped">
 
 										    <tbody>
 			<tr>
@@ -94,7 +98,7 @@
 					</td>		
 					<td>${vo.food_category_name}</td>			
 				<td>
-					<input type="button" class="btn wid30 btn_cart"  value="상세보기" onclick="location.href='seller_detail.do?seller_idx='+${ vo.seller_idx }">
+					<input type="button" class="btn wid30 btn_menu"  value="상세보기" onclick="location.href='seller_detail.do?seller_idx='+${ vo.seller_idx }">
 
 				</td>			
 
@@ -109,13 +113,18 @@
 
 
 
-										</div>
+										<!-- </div> -->
                                     </div>
                                 
                                 
                             </div>
                         	<!-- End // .page-body -->
+						<input type="button" class="btn wid40 btn_cart" value="상점등록하기" onclick="location.href='seller_insert_form.do'">
+						<input type="button" class="btn wid40 btn_cart" value="메인페이지" onclick="location.href='../main.do'">
+
                         </div>
+                        
+                	
                     </article>
 
 
@@ -128,10 +137,7 @@
 
 
 
-					<div class="purchase-option-inner">
-						<div><input type="button" class="btn wid100 btn_cart" value="상점등록하기" onclick="location.href='seller_insert_form.do'"></div>
-						<div><input type="button" class="btn wid100 btn_cart" value="메인페이지" onclick="location.href='../index.jsp'"></div>
-                	</div>
+					
                 </div>
 
             </div>

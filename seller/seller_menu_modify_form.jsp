@@ -151,7 +151,7 @@
                             </div><!-- .page-header -->
 
                             <!--.page-body -->
-                            <div class="tab-content">
+                            <!-- <div class="tab-content"> -->
 	
 
 	
@@ -166,10 +166,12 @@
 <form enctype="multipart/form-data" id="ajaxForm" method="post">
     <input id="ajaxFile" type="file"  style="display:none;"  onChange="photo_upload();" >
     <!-- 이미지 수정 버튼을 클릭하면 위 file type이 눌린것처럼 (display:none-> hidden) -->
+</form>
 
+<form>
 	<input type="hidden" name="menu_idx" value="${ menu_vo.menu_idx }">
 	<input type="hidden" name="seller_idx" value="${ seller_vo.seller_idx }">	
-	
+
 
       	  	<table class="table table-striped">
       	  		<!-- 이미지와 제목/내용 수정 이원화, 현재 파일에서는 제목/내용만 수정, 이미지는 ajax로 수정(background 통신) -->
@@ -238,7 +240,7 @@
 
 									
 								</div>
-							</div>
+							<!-- </div> -->
  							</div>
                         	<!-- End // .page-body -->
                         </div>

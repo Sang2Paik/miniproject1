@@ -23,6 +23,9 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/assets/css/itemDetail.css">
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <!-- Font 210Supersize -->
+    <script src="${pageContext.request.contextPath}/assets/js/font210.js"></script>
+    
 
 <script type="text/javascript">
 	
@@ -70,6 +73,14 @@
 			float: left;
 		}
 		
+		.cm {	margin: 0px auto;	}
+		.cp {	padding: 0px auto;	}
+		.ct {	text-align: center;	}
+		.pop_btn {	width: 130px; height: 60px}
+		.pop_aside {width: 100%; padding: 10px; background-color: #eee; border: 1px solid #c45654}
+		.pop_bside {width: 100%; padding: 10px; background-color: #eee; border: 2px solid #c45654; line-height: 30px;}
+		.solid { width: 250px; border-bottom: 1px solid #ccc; text-indent: 10px; padding-bottom: 5px;}
+		
 	
     </style>
 
@@ -79,26 +90,6 @@
 										
  
 <body>								
-
-
-
-			<!-- Contents -->
-        <div class="container pt-4 pt-xl-5 c">
-	
-	        <main id="content">
-            <div class="container">
-                <div class="row shop_tt">
-
-
-                    <article class="col-md-12 article affix-purchase-target">
-
-                        <div class="content-inner" role="toolbar">
-							<div class="page-header">
-                                <h1 class="page-title"> 메뉴이름</h1>
-                            </div><!-- .page-header -->
-
-
-
 
 
 
@@ -120,29 +111,32 @@
       </div>
 
       <!-- Modal body -->
-      <div class="modal-body">
+      <div class="modal-body col-md-12">
 		<div id="popup_image_box">
-			<img id="popup_image" src="" width=150>
+			<img id="popup_image" src="" width="200px">
 		</div>
 		<div id="popup_content_box">
-		  	<div id="popup_menu_category_name">메뉴카테고리</div>
-		  	<div id="popup_menu_price">메뉴가격</div>
-		  	<div id="popup_menu_detail">메뉴소개</div>
-		  	<div id="popup_menu_created_date">메뉴생성일</div>
-		  	<div id="popup_menu_modified_date">메뉴수정일</div>
-		  	<div id="popup_menu_rating_avg">메뉴평점</div>
-		  	<div id="popup_menu_status">메뉴상태</div>
+		  	<div class="solid" id="popup_menu_category_name">메뉴카테고리</div>
+		  	<div class="solid"  id="popup_menu_price">메뉴가격</div>
+		  	<div class="solid"  id="popup_menu_detail">메뉴소개</div>
+		  	<div class="solid"  id="popup_menu_created_date">메뉴생성일</div>
+		  	<div class="solid"  id="popup_menu_modified_date">메뉴수정일</div>
+		  	<div class="solid"  id="popup_menu_rating_avg">메뉴평점</div>
+		  	<div class="solid"  id="popup_menu_status">메뉴상태</div>
 		 </div>
 		</div>
+		
+		
         
 
       <!-- Modal footer -->
-      <div class="modal-footer" style="clear:both; text-align: center">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        <input id="btn_popup_update" type="button" class="btn wid30 btn_cart"value="수정"
-               onclick="modify_form();">
-        <input id="btn_popup_delete" type="button" class="btn wid30 btn_cart" value="삭제"
-               onclick="del();">
+      <div class="modal-footer cm" style="clear:both; text-align: center">
+      <i><input id="btn_popup_update" type="button" class="btn wid30 btn_menu pop_btn" value="수정"
+               onclick="modify_form();"></i>
+      <i><input id="btn_popup_delete" type="button" class="btn wid30 btn_menu pop_btn" value="삭제"
+               onclick="del();"></i>
+      <i><input id="btn_popup_close" type="button" class="btn wid30 btn_menu pop_btn" value="닫기" data-bs-dismiss="modal"></i>
+        <!-- <button id="btn_popup_close" type="button" class="btn wid30 btn_menu" data-bs-dismiss="modal">Close</button> -->
       </div>
 
     </div>
