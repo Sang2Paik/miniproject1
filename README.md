@@ -1,3 +1,18 @@
+최병훈 : 2024.01.31 디자인수정 최종파일
+/ header.jsp
+/ assets > css > style.css
+/ assets > css > font210.css
+/ assets > js > font210.js
+
+/ seller / seller_menu_popup.jsp
+/ seller / seller_page.jsp
+/ seller / seller_menu_view.jsp
+/ seller / seller_detail.jsp
+변경해주세요~~
+
+
+
+
 최병훈 : 2024.01.29 업데이트 중
 - assets > img > cate_market.png (이미지만 교체 전통시장 -> 식료품) 
 
