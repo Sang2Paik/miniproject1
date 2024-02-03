@@ -1,6 +1,6 @@
 # 미니프로젝트 - 동네가게
 
-<img src="">
+<img src="https://github.com/Sang2Paik/miniproject1/blob/main/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B71.png">
 
 <hr>
 
