@@ -1,3 +1,95 @@
+# 미니프로젝트 - 동네가게
+
+<img src="">
+
+<hr>
+
+# :clipboard: 목차
+### 1. [프로젝트 설명](#-프로젝트-설명)<br/>
+### 2. [개발 기간](#-개발-기간)<br/>
+### 3. [팀원소개](#-팀원소개)<br/>
+### 4. [사용기술](#-tools)<br/>
+### 5. [기능소개](#-기능소개)<br/>
+
+<hr>
+
+ # :movie_camera: 프로젝트 설명
+    
+    
+  
+  <img src="" alt="">
+  
+  ## <a href="https://github.com/Sang2Paik/miniproject1/">Source Repository</a>
+
+<hr>
+
+# :calendar: 개발 기간
+- ` 2024년 1월 22일 (월) ~ 2024년 1월 30일(화) `
+- ` 설계 1일 / 개발 6일 `
+
+<hr>
+
+# :family: 팀원소개
+  
+  ## WEB DESIGN 
+  * 최병훈
+     * 전체적인 웹 디자인
+  
+  ## BACK END 
+  * 백상희
+    * 로그인, 로그아웃 기능 구현
+    * 지도에 주변 2km 이내의 가게 마커로 표현하기
+    * 음식 카테고리별 주변 2km 이내의 소상공인 가게 리스트 10개 출력하는 기능
+  * 이영준
+    * 소상공인 가게정보 CRUD 기능 구현
+    * 가게별 메뉴정보 CRUD 기능 구현
+  * 최시환
+    * 관리자 페이지 기능 구현 (모든 유저 리스트 관리, 쿠폰 발행 기능 구현)
+    * 일반 유저 및 소상공인은 쿠폰 발급 받기 후, 내 쿠폰 보기 기능 구현
+
+<hr>
+
+# :wrench: 사용기술
+
+  #### Front-End 
+  <div style="display:inline-block">
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white" />
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=CSS3&logoColor=white" />
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white" />
+    <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white" /> 
+  </div>
+  
+  #### Back-End
+  <div style="display:inline-block">
+    <img src="https://img.shields.io/badge/Java-007396?style=flat&logo=Java&logoColor=white" /> 
+    <img src="https://img.shields.io/badge/Apache Tomcat-F8DC75?style=flat&logo=apachetomcat&logoColor=white" /> 
+    <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" />  
+  </div>
+  
+  #### Tools
+  <div style="display:inline-block">
+    <img src="https://img.shields.io/badge/Elipse-2C2255?style=flat&logo=eclipseide&logoColor=white" /> 
+  </div>
+
+<hr>
+
+ # :bookmark_tabs: 기능소개
+  
+  <ul>
+    <li>로그인 (유저 타입 : 일반 유저/소상공인/관리자)</li>
+    <li>유저의 본인 정보 확인, 수정, 삭제</li>
+    <li>소상공인의 경우 가게 및 메뉴 등록 기능</li>
+    <li>현재 위치 기반의 소상공인 가게 리스트 출력 및 지도에 마커 표시</li>
+    <li>관리자 쿠폰 발행 기능</li>
+    <li>유저 및 소상공인은 쿠폰 발급 및 내 쿠폰 확인 기능 </li>
+  </ul>
+
+
+----
+이전 커뮤니케이션 기록
+----
+
+
 최병훈 : 2024.01.31 AM 11:44 디자인수정 최종파일
 - header.jsp
 - assets > css > style.css
@@ -10,9 +102,6 @@
 - seller / seller_insert_form.jsp
 변경해주세요~~
  
-
-
-
 최병훈 : 2024.01.29 업데이트 중
 - assets > img > cate_market.png (이미지만 교체 전통시장 -> 식료품) 
 
