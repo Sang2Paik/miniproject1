@@ -1,6 +1,6 @@
 # 미니프로젝트 - 동네가게
 
-<img src="https://github.com/Sang2Paik/miniproject1/assets/147046089/9c388dda-e36c-49e5-be6a-44cf95fc3044" alt="시연영상">
+https://github.com/Sang2Paik/miniproject1/assets/147046089/6660c6e9-ab28-433e-82cc-c1724348e791
 
 <hr>
 
